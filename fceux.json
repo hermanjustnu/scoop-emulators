@@ -1,0 +1,28 @@
+{
+    "homepage": "http://www.fceux.com",
+    "version": "2.2.3",
+    "license": "GPLv2",
+    "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/2.2.3/fceux-2.2.3-win32.zip?r=scoop",
+    "hash": "4753f1414db330365c232e826f4ba686e6ba6888ec7e1ee6ac6fe7e250688204",
+    "shortcuts": [
+        [
+            "fceux.exe",
+            "FCEUX"
+        ]
+    ],
+    "persist": [
+        "cheats",
+        "fcs",
+        "movies",
+        "sav",
+        "snaps",
+        "fceux.cfg"
+    ],
+    "checkver": {
+        "url": "http://www.fceux.com/web/version.html",
+        "re": "pressrelease-([\\d.]+).html"
+    },
+    "autoupdate": {
+        "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/$version/fceux-$version-win32.zip?r=scoop"
+    }
+}
