@@ -1,0 +1,25 @@
+{
+    "homepage": "http://cemu.info/",
+    "version": "1.8.2b",
+    "url": "http://cemu.info/releases/cemu_1.8.2.zip",
+    "hash": "c0c666707848df0f57e270aa00e1c0830668175b9bb45577229a5198976f577a",
+    "extract_dir": "cemu_1.8.2",
+    "shortcuts": [
+        [
+            "cemu.exe",
+            "Cemu"
+        ]
+    ],
+    "suggest": {
+        "vcredist": [
+            "extras/vcredist2015"
+        ]
+    },
+    "checkver": {
+        "re": "Download latest version \\(v((?<version>[\\d.]+)[\\w]+?),"
+    },
+    "autoupdate": {
+        "url": "http://cemu.info/releases/cemu_$matchVersion.zip",
+        "extract_dir": "cemu_$matchVersion"
+    }
+}
