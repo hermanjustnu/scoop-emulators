@@ -1,0 +1,30 @@
+{
+    "homepage": "https://dolphin-emu.org/",
+    "version": "5.0-4794",
+    "license": "GPLv2",
+    "url": "https://dl.dolphin-emu.org/builds/dolphin-master-5.0-4794-x64.7z",
+    "hash": "bcbda8fa7a6dbc968071d005b853cd40a6a0af7652065ec207cf88f518df98ef",
+    "extract_dir": "Dolphin-x64",
+    "shortcuts": [
+        [
+            "Dolphin.exe",
+            "Dolphin (Dev)"
+        ],
+        [
+            "DolphinQt2.exe",
+            "Dolphin Qt (Dev)"
+        ]
+    ],
+    "suggest": {
+        "vcredist": [
+            "extras/vcredist2015"
+        ]
+    },
+    "checkver": {
+        "url": "https://dolphin-emu.org/download/",
+        "re": "https://dl.dolphin-emu.org/builds/dolphin-master-([\\d.]+-[\\d]+)-x64.7z"
+    },
+    "autoupdate": {
+        "url": "https://dl.dolphin-emu.org/builds/dolphin-master-$version-x64.7z"
+    }
+}
