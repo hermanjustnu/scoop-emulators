@@ -24,6 +24,16 @@
             ]
         }
     },
+    "persist": [
+        "Roms",
+        "Screenshots",
+        "Movies",
+        "SPCs",
+        "Saves",
+        "Cheats",
+        "BIOS",
+        "snes9x.conf"
+    ],
     "checkver": {
         "github": "https://github.com/snes9xgit/snes9x"
     },
