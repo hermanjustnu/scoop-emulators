@@ -8,11 +8,6 @@
         "innounp"
     ],
     "innosetup": true,
-    "postinstall": "New-Item -ItemType Directory -Path \"$dir\" Logs | Out-Null
-New-Item -ItemType Directory -Path \"$dir\" Save | Out-Null
-New-Item -ItemType Directory -Path \"$dir\" Screenshots | Out-Null
-New-Item -ItemType Directory -Path \"$dir\" Textures | Out-Null 
-New-Item -ItemType Directory -Path \"$dir\" ROMs | Out-Null",
     "shortcuts": [
         [
             "Project64.exe",
