@@ -1,0 +1,45 @@
+{
+    "homepage": "http://mamedev.org/",
+    "license": "http://docs.mamedev.org/license.html",
+    "version": "0.188",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mamedev/mame/releases/download/mame0188/mame0188b_64bit.exe#/dl.7z",
+            "hash": "8c1e73ece4c4ab1d52f29ea216db06745dd8cb21b398c62cc50554c1e977d28c",
+            "bin": [
+                [
+                    "mame64.exe",
+                    "mame"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://github.com/mamedev/mame/releases/download/mame0188/mame0188b_32bit.exe#/dl.7z",
+            "hash": "4bf7faa98a24a2ca04fdeee7a9b0ca4089c7142476315202a92812a12a523289",
+            "bin": [
+                "mame.exe"
+            ]
+        }
+    },
+    "pre_install": "Add-Content $dir\\mame.ini $null",
+    "post_install": "Push-Location \"$dir\"
+mame -createconfig
+Pop-Location",
+    "persist": [
+        "mame.ini"
+    ],
+    "checkver": {
+        "url": "https://github.com/mamedev/mame/releases/latest",
+        "re": "<a href=\"/mamedev/mame/releases/tag/mame(?<clean>[\\d]+)\">MAME ([\\d.]+)</a>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mamedev/mame/releases/download/mame$cleanVersion/mame$cleanVersionb_64bit.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/mamedev/mame/releases/download/mame$cleanVersion/mame$cleanVersionb_32bit.exe#/dl.7z"
+            }
+        }
+    }
+}
