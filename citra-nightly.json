@@ -4,6 +4,7 @@
     "license": "GPLv2",
     "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-272/citra-windows-msvc-20170728-fc43e02.zip",
     "hash": "3d9f63938ee2657c9d7bf7de8d3929fbf3a70bd37f0a93f491e2bea532e62c01",
+    "extract_dir": "nightly",
     "shortcuts": [
         [
             "citra-qt.exe",
