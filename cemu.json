@@ -1,9 +1,9 @@
 {
     "homepage": "http://cemu.info/",
-    "version": "1.8.2b",
-    "url": "http://cemu.info/releases/cemu_1.8.2.zip",
-    "hash": "c0c666707848df0f57e270aa00e1c0830668175b9bb45577229a5198976f577a",
-    "extract_dir": "cemu_1.8.2",
+    "version": "1.9.0c",
+    "url": "http://cemu.info/releases/cemu_1.9.0.zip",
+    "hash": "d577d772599ba3f85645b428d980eacbc0350a49b2539a1eba380feac3c76f91",
+    "extract_dir": "cemu_1.9.0",
     "shortcuts": [
         [
             "cemu.exe",
@@ -11,7 +11,7 @@
         ]
     ],
     "persist": [
-    	"settings.bin"
+        "settings.bin"
     ],
     "suggest": {
         "vcredist": [
