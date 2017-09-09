@@ -1,9 +1,9 @@
 {
     "homepage": "http://cemu.info/",
-    "version": "1.9.0c",
-    "url": "http://cemu.info/releases/cemu_1.9.0.zip",
-    "hash": "d577d772599ba3f85645b428d980eacbc0350a49b2539a1eba380feac3c76f91",
-    "extract_dir": "cemu_1.9.0",
+    "version": "1.9.1",
+    "url": "http://cemu.info/releases/cemu_1.9.1.zip",
+    "hash": "4ff2ca46e7a6f4e8acede791f756c9a9c24640b8069ab2f46aa12f4dd02e0925",
+    "extract_dir": "cemu_1.9.1",
     "shortcuts": [
         [
             "cemu.exe",
@@ -19,7 +19,7 @@
         ]
     },
     "checkver": {
-        "re": "Download latest version \\(v((?<version>[\\d.]+)[\\w]+?),"
+        "re": "Download latest version \\(v((?<version>[\\d.]+)[\\w]*?),"
     },
     "autoupdate": {
         "url": "http://cemu.info/releases/cemu_$matchVersion.zip",
