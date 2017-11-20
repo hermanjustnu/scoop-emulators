@@ -1,11 +1,11 @@
 {
     "homepage": "http://www.snes9x.com/",
-    "version": "1.54.1",
-    "license": "https://raw.githubusercontent.com/snes9xgit/snes9x/1.54.1/docs/snes9x-license.txt",
+    "version": "1.55",
+    "license": "https://raw.githubusercontent.com/snes9xgit/snes9x/1.55/docs/snes9x-license.txt",
     "architecture": {
         "64bit": {
-            "url": "https://sites.google.com/site/bearoso/snes9x/snes9x-1.54.1-win32-x64.zip?attredirects=0&d=1",
-            "hash": "ff87a586e3ab33a1a1dcb38280ccccb96351743ed24ce1d3d3efd64ec69f5ff9",
+            "url": "https://sites.google.com/site/bearoso/snes9x/snes9x-1.55-win32-x64.zip?attredirects=0&d=1",
+            "hash": "48e5a0aca0deb91a8c038e1d594f80397d75770e537735f54c202fdbbbb41552",
             "shortcuts": [
                 [
                     "snes9x-x64.exe",
@@ -14,8 +14,8 @@
             ]
         },
         "32bit": {
-            "url": "https://sites.google.com/site/bearoso/snes9x/snes9x-1.54.1-win32.zip?attredirects=0&d=1",
-            "hash": "489ab6209d174f65109b3221c555cf8ad6feed542b10417d4af5c5718c01f6b2",
+            "url": "https://sites.google.com/site/bearoso/snes9x/snes9x-1.55-win32.zip?attredirects=0&d=1",
+            "hash": "8daeb50ff9513cde7a60052ea0689cb9bf29a9178b0775a6a207f397f62bfc8f",
             "shortcuts": [
                 [
                     "snes9x.exe",
