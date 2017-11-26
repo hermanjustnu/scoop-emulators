@@ -3,7 +3,7 @@
     "version": "2.2.3",
     "license": "GPLv2",
     "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/2.2.3/fceux-2.2.3-win32.zip?r=scoop",
-    "hash": "4753f1414db330365c232e826f4ba686e6ba6888ec7e1ee6ac6fe7e250688204",
+    "hash": "md5:a36864ba6fc048a1296e7da1e157e09a",
     "shortcuts": [
         [
             "fceux.exe",
@@ -19,10 +19,14 @@
         "fceux.cfg"
     ],
     "checkver": {
-        "url": "http://www.fceux.com/web/version.html",
-        "re": "pressrelease-([\\d.]+).html"
+        "url": "https://sourceforge.net/projects/fceultra/rss?path=/Binaries/",
+        "re": "Binaries/([\\d.]+)/fceux-[\\d.]+-win[\\d]{2}\\.zip"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/$version/fceux-$version-win32.zip?r=scoop"
+        "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/$version/fceux-$version-win32.zip?r=scoop",
+        "hash": {
+            "url": "https://sourceforge.net/projects/fceultra/rss?path=/Binaries/",
+            "find": "/(?:$basename)/download\" filesize=\"(?<size>[\\d]+)\"><media:hash algo=\"md5\">([a-fA-F0-9]{32})</media:hash>"
+        }
     }
 }
