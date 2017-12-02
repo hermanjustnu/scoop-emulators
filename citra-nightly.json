@@ -1,9 +1,9 @@
 {
     "homepage": "https://citra-emu.org/",
-    "version": "434",
+    "version": "436",
     "license": "GPLv2",
-    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-434/citra-windows-msvc-20171129-b2a9904.zip",
-    "hash": "81821bf125ce248446f7f34db83eae4367102f50b325e5d04fe5df46a43adc5f",
+    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-436/citra-windows-msvc-20171130-fcf0d10.zip",
+    "hash": "782e7f5d073dea1684cf85ed6984333461f133798cd28bd3ad73acaacfbbce0c",
     "extract_dir": "nightly",
     "shortcuts": [
         [
