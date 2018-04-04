@@ -1,17 +1,17 @@
 {
     "homepage": "https://mgba.io",
-    "version": "0.6.1",
-    "license": "https://raw.githubusercontent.com/mgba-emu/mgba/0.6.1/LICENSE",
+    "version": "0.6.2",
+    "license": "https://raw.githubusercontent.com/mgba-emu/mgba/0.6.2/LICENSE",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mgba-emu/mgba/releases/download/0.6.1/mGBA-0.6.1-win64.7z",
-            "hash": "121b68d6f91c7361957086e8d0c884731663cbb0431eec34d3b0f23eaa08acb6",
-            "extract_dir": "mGBA-0.6.1-2017-10-01-win64"
+            "url": "https://github.com/mgba-emu/mgba/releases/download/0.6.2/mGBA-0.6.2-win64.7z",
+            "hash": "ba522b03b4936fb616ad6f28ee4b49dcda60f207db150f6a9516d99ccbd28b91",
+            "extract_dir": "mGBA-0.6.2-2018-04-04-win64"
         },
         "32bit": {
-            "url": "https://github.com/mgba-emu/mgba/releases/download/0.6.1/mGBA-0.6.1-win32.7z",
-            "hash": "97b8d066f2304301754345bb044cf214fa11b7fe123b2494da1a78b0f9dbdfa2",
-            "extract_dir": "mGBA-0.6.1-2017-10-01-win32"
+            "url": "https://github.com/mgba-emu/mgba/releases/download/0.6.2/mGBA-0.6.2-win32.7z",
+            "hash": "a243c50f2087a99699d7d8460813d6916d9713d0c661417c356b9cd6c111d047",
+            "extract_dir": "mGBA-0.6.2-2018-04-04-win32"
         }
     },
     "shortcuts": [
