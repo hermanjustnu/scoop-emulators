@@ -6,12 +6,12 @@
         "64bit": {
             "url": "https://github.com/mgba-emu/mgba/releases/download/0.6.3/mGBA-0.6.3-win64.7z",
             "hash": "45c2acd2179503c16659acd746de29145eb66654e8aa5900e04ae1153767637d",
-            "extract_dir": "mGBA-0.6.3-2018-04-14-win64"
+            "extract_dir": "mGBA-0.6.3-win64"
         },
         "32bit": {
             "url": "https://github.com/mgba-emu/mgba/releases/download/0.6.3/mGBA-0.6.3-win32.7z",
             "hash": "1081adf32e1def81d5295c342329ac46a9312f7c81048733c75bd30bcfd222fb",
-            "extract_dir": "mGBA-0.6.3-2018-04-14-win32"
+            "extract_dir": "mGBA-0.6.3-win32"
         }
     },
     "shortcuts": [
@@ -29,11 +29,11 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/mgba-emu/mgba/releases/download/$version/mGBA-$version-win64.7z",
-                "extract_dir": "mGBA-$version-$matchDate-win64"
+                "extract_dir": "mGBA-$version-win64"
             },
             "32bit": {
                 "url": "https://github.com/mgba-emu/mgba/releases/download/$version/mGBA-$version-win32.7z",
-                "extract_dir": "mGBA-$version-$matchDate-win32"
+                "extract_dir": "mGBA-$version-win32"
             }
         }
     }
