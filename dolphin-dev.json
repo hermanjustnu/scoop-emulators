@@ -1,9 +1,9 @@
 {
     "homepage": "https://dolphin-emu.org/",
-    "version": "5.0-7706",
+    "version": "5.0-7709",
     "license": "GPLv2",
-    "url": "https://dl.dolphin-emu.org/builds/dolphin-master-5.0-7706-x64.7z",
-    "hash": "ab603f3dea75f6e6c88da5d2d79e9a532b32bf3b577279f0cbb32c58dd7208d7",
+    "url": "https://dl.dolphin-emu.org/builds/dolphin-master-5.0-7709-x64.7z",
+    "hash": "11a9bf4a893940894a481319a68ad53ef01db7a575320d01fcc167d48cd55f42",
     "extract_dir": "Dolphin-x64",
     "shortcuts": [
         [
