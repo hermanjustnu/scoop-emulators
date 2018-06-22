@@ -14,9 +14,9 @@
     "bin": "citra.exe",
     "checkver": {
         "url": "https://github.com/citra-emu/citra-nightly/releases/latest",
-        "re": "<a href=\"/citra-emu/citra-nightly/releases/download/nightly-([\\d]+)/citra-windows-msvc-(?<commit>[\\d]{8}-[\\da-z]{7}).zip\" rel=\"nofollow\">"
+        "re": "<a href=\"/citra-emu/citra-nightly/releases/download/nightly-([\\d]+)/citra-windows-msvc-(?<commit>[\\d]{8}-[\\da-z]{7}).(?<zip>7z|zip)\" rel=\"nofollow\">"
     },
     "autoupdate": {
-        "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-$version/citra-windows-msvc-$matchCommit.zip"
+        "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-$version/citra-windows-msvc-$matchCommit.$matchZip"
     }
 }
