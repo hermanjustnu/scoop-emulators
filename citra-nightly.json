@@ -1,9 +1,9 @@
 {
     "homepage": "https://citra-emu.org/",
-    "version": "729",
+    "version": "747",
     "license": "GPLv2",
-    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-729/citra-windows-msvc-20180609-cf9bfe0.zip",
-    "hash": "ca19fb54750d94cda91379ecfcb51280b78f09bf6a3bd47f3b1853dc8701a741",
+    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-747/citra-windows-msvc-20180621-4c67f1c.7z",
+    "hash": "bcfcd74c1599d65e7e46b96d4ed6fe1929f92aa2b5104693975a276a8bc79931",
     "extract_dir": "nightly",
     "shortcuts": [
         [
@@ -13,8 +13,8 @@
     ],
     "bin": "citra.exe",
     "checkver": {
-        "url": "https://github.com/citra-emu/citra-nightly/releases/latest",
-        "re": "<a href=\"/citra-emu/citra-nightly/releases/download/nightly-([\\d]+)/citra-windows-msvc-(?<commit>[\\d]{8}-[\\da-z]{7}).(?<zip>7z|zip)\" rel=\"nofollow\">"
+        "url": "https://github.com/citra-emu/citra-nightly/releases",
+        "re": "<a href=\"/citra-emu/citra-nightly/releases/download/nightly-([\\d]+)/citra-windows-msvc-(?<commit>[\\d]{8}-[\\da-f]{7})\\.(?<zip>7z|zip)\" rel=\"nofollow\">"
     },
     "autoupdate": {
         "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-$version/citra-windows-msvc-$matchCommit.$matchZip"
