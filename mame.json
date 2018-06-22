@@ -22,9 +22,11 @@
         }
     },
     "pre_install": "Add-Content $dir\\mame.ini $null",
-    "post_install": "Push-Location \"$dir\"
-mame -createconfig
-Pop-Location",
+    "post_install": [
+        "Push-Location \"$dir\"",
+        "mame -createconfig",
+        "Pop-Location"
+    ],
     "persist": [
         "mame.ini"
     ],
