@@ -1,0 +1,57 @@
+{
+    "homepage": "https://desmume.org",
+    "version": "0.9.11",
+    "license": "GPLv2",
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.sourceforge.net/project/desmume/desmume/0.9.11/desmume-0.9.11-win64.zip?r=scoop",
+            "hash": "md5:c8e6ac438c5e13c2236ee48eeae8c854",
+            "shortcuts": [
+                [
+                    "DeSmuME_0.9.11_x64.exe",
+                    "DeSmuME"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://downloads.sourceforge.net/project/desmume/desmume/0.9.11/desmume-0.9.11-win32.zip?r=scoop",
+            "hash": "md5:71b97cb607f1e41462c530836136967c",
+            "shortcuts": [
+                [
+                    "DeSmuME_0.9.11_x86.exe",
+                    "DeSmuME"
+                ]
+            ]
+        }
+    },
+    "checkver": {
+        "url": "https://sourceforge.net/projects/desmume/rss?path=/desmume",
+        "re": "desmume/([\\d.]+)/desmume-[\\d.]+-win[\\d]{2}\\.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win64.zip?r=scoop",
+                "shortcuts": [
+                    [
+                        "DeSmuME_$version_x64.exe",
+                        "DeSmuME"
+                    ]
+                ]
+            },
+            "32bit": {
+                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win32.zip?r=scoop",
+                "shortcuts": [
+                    [
+                        "DeSmuME_$version_x86.exe",
+                        "DeSmuME"
+                    ]
+                ]
+            }
+        },
+        "hash": {
+            "url": "https://sourceforge.net/projects/desmume/rss?path=/desmume",
+            "find": "/(?:$basename)/download\" filesize=\"(?<size>[\\d]+)\"><media:hash algo=\"md5\">([a-fA-F0-9]{32})</media:hash>"
+        }
+    }
+}
