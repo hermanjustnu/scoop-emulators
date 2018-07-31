@@ -4,7 +4,7 @@
     "license": "GPLv2",
     "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-851/citra-windows-mingw-20180730-05eb0cc.7z",
     "hash": "9837be322aec84173e6c3221b3dc09938c5c873a5d39a8e7e36eb362021fb0af",
-    "extract_dir": "nightly",
+    "extract_dir": "nightly-mingw",
     "shortcuts": [
         [
             "citra-qt.exe",
@@ -17,6 +17,7 @@
         "re": "<a href=\"/citra-emu/citra-nightly/releases/download/nightly-([\\d]+)/citra-windows-(?<env>[\\w]+)-(?<commit>[\\d]{8}-[\\da-f]{7})\\.(?<zip>7z|zip)\" rel=\"nofollow\">"
     },
     "autoupdate": {
-        "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-$version/citra-windows-$matchEnv-$matchCommit.$matchZip"
+        "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-$version/citra-windows-$matchEnv-$matchCommit.$matchZip",
+        "extract_dir": "nightly-$matchEnv"
     }
 }
