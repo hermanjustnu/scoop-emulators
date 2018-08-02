@@ -1,9 +1,9 @@
 {
     "homepage": "https://citra-emu.org/",
-    "version": "860",
+    "version": "861",
     "license": "GPLv2",
-    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-860/citra-windows-mingw-20180802-c771dd9.7z",
-    "hash": "1874e25f0afb5b3216e5e0e1d597836c30df34c471524ee1fcf90b7bf1b35a31",
+    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-861/citra-windows-mingw-20180802-4b59c1b.7z",
+    "hash": "b6f27807054a8cf5fef3c60cd33f7632b91facfccbb9c5c2bfba4b6128dec11b",
     "extract_dir": "nightly-mingw",
     "shortcuts": [
         [
