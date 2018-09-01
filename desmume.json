@@ -4,21 +4,21 @@
     "license": "GPLv2",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/desmume/desmume/0.9.11/desmume-0.9.11-win64.zip?r=scoop",
-            "hash": "md5:c8e6ac438c5e13c2236ee48eeae8c854",
+            "url": "https://downloads.sourceforge.net/project/desmume/desmume/0.9.11/desmume-0.9.11-win64.zip",
+            "hash": "sha1:0de5ef3e7712e25b0bba4fd4ef4700eca10c6066",
             "shortcuts": [
                 [
-                    "DeSmuME_$version_x64.exe",
+                    "DeSmuME_0.9.11_x64.exe",
                     "DeSmuME"
                 ]
             ]
         },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/desmume/desmume/0.9.11/desmume-0.9.11-win32.zip?r=scoop",
-            "hash": "md5:71b97cb607f1e41462c530836136967c",
+            "url": "https://downloads.sourceforge.net/project/desmume/desmume/0.9.11/desmume-0.9.11-win32.zip",
+            "hash": "sha1:3040b9c5457f623c33b98cbeb7f35343aaf6748e",
             "shortcuts": [
                 [
-                    "DeSmuME_$version_x86.exe",
+                    "DeSmuME_0.9.11_x86.exe",
                     "DeSmuME"
                 ]
             ]
@@ -31,15 +31,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win64.zip?r=scoop"
+                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win64.zip"
             },
             "32bit": {
-                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win32.zip?r=scoop"
+                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win32.zip"
             }
-        },
-        "hash": {
-            "url": "https://sourceforge.net/projects/desmume/rss?path=/desmume",
-            "find": "/(?:$basename)/download\" filesize=\"(?<size>[\\d]+)\"><media:hash algo=\"md5\">([a-fA-F0-9]{32})</media:hash>"
         }
     }
 }
