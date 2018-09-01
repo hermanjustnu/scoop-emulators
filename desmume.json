@@ -8,7 +8,7 @@
             "hash": "md5:c8e6ac438c5e13c2236ee48eeae8c854",
             "shortcuts": [
                 [
-                    "DeSmuME_0.9.11_x64.exe",
+                    "DeSmuME_$version_x64.exe",
                     "DeSmuME"
                 ]
             ]
@@ -18,7 +18,7 @@
             "hash": "md5:71b97cb607f1e41462c530836136967c",
             "shortcuts": [
                 [
-                    "DeSmuME_0.9.11_x86.exe",
+                    "DeSmuME_$version_x86.exe",
                     "DeSmuME"
                 ]
             ]
@@ -31,22 +31,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win64.zip?r=scoop",
-                "shortcuts": [
-                    [
-                        "DeSmuME_$version_x64.exe",
-                        "DeSmuME"
-                    ]
-                ]
+                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win64.zip?r=scoop"
             },
             "32bit": {
-                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win32.zip?r=scoop",
-                "shortcuts": [
-                    [
-                        "DeSmuME_$version_x86.exe",
-                        "DeSmuME"
-                    ]
-                ]
+                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win32.zip?r=scoop"
             }
         },
         "hash": {
