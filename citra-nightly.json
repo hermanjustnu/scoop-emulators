@@ -1,9 +1,9 @@
 {
     "homepage": "https://citra-emu.org/",
-    "version": "900",
+    "version": "944",
     "license": "GPLv2",
-    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-900/citra-windows-mingw-20180813-aed15a8.7z",
-    "hash": "2c72f60e318f79dea64dc1a70ba7b0d711d1e669edcfaab4dd361e900b7547b2",
+    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-944/citra-windows-mingw-20180901-b4fdce0.7z",
+    "hash": "6e4655c083e1e38baf470758f288bc7f2afcf6fbabcade3f7577583f7a000677",
     "extract_dir": "nightly-mingw",
     "shortcuts": [
         [
@@ -14,7 +14,7 @@
     "bin": "citra.exe",
     "checkver": {
         "url": "https://github.com/citra-emu/citra-nightly/releases",
-        "re": "<a href=\"/citra-emu/citra-nightly/releases/download/nightly-([\\d]+)/citra-windows-(?<env>[\\w]+)-(?<commit>[\\d]{8}-[\\da-f]{7})\\.(?<zip>7z|zip)\" rel=\"nofollow\">"
+        "re": "/citra-emu/citra-nightly/releases/download/nightly-([\\d]+)/citra-windows-(?<env>[\\w]+)-(?<commit>[\\d]{8}-[\\da-f]{7})\\.(?<zip>7z|zip)"
     },
     "autoupdate": {
         "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-$version/citra-windows-$matchEnv-$matchCommit.$matchZip",
