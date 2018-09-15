@@ -1,0 +1,46 @@
+{
+    "homepage": "https://desmume.org",
+    "version": "20180830-c8ef38a",
+    "license": "GPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://drive.google.com/uc?export=download&id=1N4nqtxmcwVTgrLMFXCK3tigihKRDabhK#/dl.zip",
+            "hash": "d3de42d88b54d367c975cd61c1f08125bed2e70d0be9ab253c244b9285a6b84e"
+        },
+        "32bit": {
+            "url": "https://drive.google.com/uc?export=download&id=12WFm1xEecelDrJrMl2ZqNn1n3w-n03vO#/dl.zip",
+            "hash": "9c6205da751011083a4d51e2ac1dddd689d55e89c0bc62b3fadf6a41a24eb27f"
+        }
+    },
+    "shortcuts": [
+        [
+            "DeSmuME.exe",
+            "DeSmuME (Nightly)"
+        ]
+    ],
+    "pre_install": [
+        "if (!(test-path \"$dir\\DeSmuME.exe\")) {",
+        "gci \"$dir\" \"DeSmuME*.exe\" |",
+        "? { $_.Name -match '(?i)DeSmuME_git#[a-z\\d]{8}_x[\\d]{2}.exe' } |",
+        "% {",
+        "warn \"Moving $($_.Name) to DeSmuMe.exe\"",
+        "mv \"$dir\\$($_.Name)\" \"$dir\\DeSmuMe.exe\"",
+        "}",
+        "}"
+    ],
+    "checkver": {
+        "url": "https://desmume.org/download/",
+        "re": "(?sm)<strong>(?<year>[\\d]{4})/(?<month>[\\d]{2})/(?<day>[\\d]{2}).*?git\\#(?<git>[a-z\\d]{7}).*?id=(?<one>.*?)\">Windows 32-bit.*?id=(?<two>.*?)\">Windows 64-bit",
+        "replace": "${year}${month}${day}-${git}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://drive.google.com/uc?export=download&id=$matchTwo#/dl.zip"
+            },
+            "32bit": {
+                "url": "https://drive.google.com/uc?export=download&id=$matchOne#/dl.zip"
+            }
+        }
+    }
+}
