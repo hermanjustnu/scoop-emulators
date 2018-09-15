@@ -1,7 +1,7 @@
 {
     "homepage": "https://desmume.org",
     "version": "0.9.11",
-    "license": "GPLv2",
+    "license": "GPL-2.0",
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/desmume/desmume/0.9.11/desmume-0.9.11-win64.zip",

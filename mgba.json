@@ -1,7 +1,7 @@
 {
     "homepage": "https://mgba.io",
     "version": "0.6.3",
-    "license": "https://raw.githubusercontent.com/mgba-emu/mgba/0.6.3/LICENSE",
+    "license": "MPL-2.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/mgba-emu/mgba/releases/download/0.6.3/mGBA-0.6.3-win64.7z",
@@ -25,7 +25,6 @@
         "re": "(?smi)\"/mgba-emu/mgba/releases/tag/([\\d.]+)\"(?<junk>.*)relative-time datetime=\"(?<date>[\\d]{4}-[\\d]{2}-[\\d]{2})T"
     },
     "autoupdate": {
-        "license": "https://raw.githubusercontent.com/mgba-emu/mgba/$version/LICENSE",
         "architecture": {
             "64bit": {
                 "url": "https://github.com/mgba-emu/mgba/releases/download/$version/mGBA-$version-win64.7z",

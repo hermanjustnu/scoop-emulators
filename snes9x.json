@@ -1,7 +1,7 @@
 {
     "homepage": "http://www.snes9x.com/",
     "version": "1.56.2",
-    "license": "https://raw.githubusercontent.com/snes9xgit/snes9x/1.56.2/docs/snes9x-license.txt",
+    "license": "https://raw.githubusercontent.com/snes9xgit/snes9x/master/LICENSE",
     "architecture": {
         "64bit": {
             "url": "https://sites.google.com/site/bearoso/snes9x/snes9x-1.56.2-win32-x64.zip?attredirects=0&d=1",
@@ -38,7 +38,6 @@
         "github": "https://github.com/snes9xgit/snes9x"
     },
     "autoupdate": {
-        "license": "https://raw.githubusercontent.com/snes9xgit/snes9x/$version/docs/snes9x-license.txt",
         "architecture": {
             "64bit": {
                 "url": "https://sites.google.com/site/bearoso/snes9x/snes9x-$version-win32-x64.zip?attredirects=0&d=1"
