@@ -1,11 +1,11 @@
 {
     "homepage": "http://mamedev.org/",
     "license": "GPL-2.0-or-later",
-    "version": "0.203",
+    "version": "0.204",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mamedev/mame/releases/download/mame0203/mame0203b_64bit.exe#/dl.7z",
-            "hash": "ad5929d17374dbc858c410b3c8f2d557b11a8a3075abdccff0ec1289b91dbadf",
+            "url": "https://github.com/mamedev/mame/releases/download/mame0204/mame0204b_64bit.exe#/dl.7z",
+            "hash": "d5d40fa6a099424ea6f672c1c1c58e1f8b4e72200bcd5b1ef37449ca98991290",
             "bin": [
                 [
                     "mame64.exe",
@@ -14,11 +14,9 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/mamedev/mame/releases/download/mame0203/mame0203b_32bit.exe#/dl.7z",
-            "hash": "5083f8c1ec3f146f7e03d1e8b707ab26f47beb416e3788c4c4f923eb56cbff87",
-            "bin": [
-                "mame.exe"
-            ]
+            "url": "https://github.com/mamedev/mame/releases/download/mame0204/mame0204b_32bit.exe#/dl.7z",
+            "hash": "fac25544f6b6be0357e4abf38f8173a4d11dadacc359a533323f5c91af2ce846",
+            "bin": "mame.exe"
         }
     },
     "pre_install": "Add-Content $dir\\mame.ini $null",
@@ -27,9 +25,7 @@
         "mame -createconfig",
         "Pop-Location"
     ],
-    "persist": [
-        "mame.ini"
-    ],
+    "persist": "mame.ini",
     "checkver": {
         "url": "https://github.com/mamedev/mame/releases/latest",
         "re": "<a href=\"/mamedev/mame/releases/tag/mame(?<clean>[\\d]+)\">MAME ([\\d.]+)</a>"
