@@ -1,22 +1,18 @@
 {
     "homepage": "http://cemu.info/",
-    "version": "1.14.0c",
-    "url": "http://cemu.info/releases/cemu_1.14.0.zip",
-    "hash": "cdb6b9ffbb2e095453ae04f18bc9d0e325a4be9b11306754738e791724977181",
-    "extract_dir": "cemu_1.14.0",
+    "version": "1.15.0d",
+    "url": "http://cemu.info/releases/cemu_1.15.0.zip",
+    "hash": "e905440fcb82f979959ceb3c6d8e931dd7b98180f23a03b4945cb2a0a740e2cb",
+    "extract_dir": "cemu_1.15.0",
     "shortcuts": [
         [
             "cemu.exe",
             "Cemu"
         ]
     ],
-    "persist": [
-        "settings.bin"
-    ],
+    "persist": "settings.bin",
     "suggest": {
-        "vcredist": [
-            "extras/vcredist2015"
-        ]
+        "vcredist": "extras/vcredist2015"
     },
     "checkver": {
         "re": "Download latest version \\(v((?<version>[\\d.]+)[\\w]*?),"
