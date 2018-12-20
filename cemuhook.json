@@ -1,0 +1,11 @@
+{
+    "homepage": "https://cemuhook.sshnuke.net/",
+    "version": "0.5.7.0",
+    "url": "https://files.sshnuke.net/cemuhook_1140_0570.zip",
+    "hash": "C58A38C60041146669C1AF6614E6A48AB580581207239B7A88D71DC00EA3CA58",
+    "depends": "cemu",
+    "post_install": [
+        "Copy-Item \"$dir\\keystone.dll\" \"$(versiondir 'cemu' 'current' $global)\"",
+        "Copy-Item \"$dir\\dbghelp.dll\" \"$(versiondir 'cemu' 'current' $global)\""
+]
+}
