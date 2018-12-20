@@ -15,9 +15,8 @@
         "settings.xml",
         "controllerProfiles",
         "gameProfiles",
-        "cemuhook.ini",
-        "dbghelp.dll",
-        "settings.xml"
+        "graphicsPacks",
+        "mlc01"
     ],
     "suggest": {
         "vcredist": "extras/vcredist2015"
