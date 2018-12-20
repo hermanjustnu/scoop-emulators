@@ -10,9 +10,20 @@
             "Cemu"
         ]
     ],
-    "persist": "settings.bin",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\settings.xml\")) {",
+            "    New-Item \"$dir\\settings.xml\" -Type File | Out-Null",
+        "}"],
+    "persist": [
+        "settings.xml",
+        "controllerProfiles",
+        "gameProfiles",
+        "graphicPacks",
+        "mlc01"
+    ],
     "suggest": {
-        "vcredist": "extras/vcredist2015"
+        "vcredist": "extras/vcredist2015",
+        "cemuhook": "cemuhook"
     },
     "checkver": {
         "re": "Download latest version \\(v((?<version>[\\d.]+)[\\w]*?),"
