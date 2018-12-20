@@ -10,7 +10,15 @@
             "Cemu"
         ]
     ],
-    "persist": "settings.bin",
+    "persist": [
+        "settings.bin",
+        "settings.xml",
+        "controllerProfiles",
+        "gameProfiles",
+        "cemuhook.ini",
+        "dbghelp.dll",
+        "settings.xml"
+    ],
     "suggest": {
         "vcredist": "extras/vcredist2015"
     },
