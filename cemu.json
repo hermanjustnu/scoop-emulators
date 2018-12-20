@@ -10,10 +10,13 @@
             "Cemu"
         ]
     ],
-    "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\settings.xml\")) {",
+    "installer": {
+        "script": [
+            "if (!(Test-Path \"$persist_dir\\settings.xml\")) {",
             "    New-Item \"$dir\\settings.xml\" -Type File | Out-Null",
-        "}"],
+            "}"
+        ]
+    },
     "persist": [
         "settings.xml",
         "controllerProfiles",
