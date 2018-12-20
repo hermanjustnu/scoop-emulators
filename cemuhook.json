@@ -2,10 +2,24 @@
     "homepage": "https://cemuhook.sshnuke.net/",
     "version": "0.5.7.0",
     "url": "https://files.sshnuke.net/cemuhook_1140_0570.zip",
-    "hash": "C58A38C60041146669C1AF6614E6A48AB580581207239B7A88D71DC00EA3CA58",
+    "hash": "c58a38c60041146669c1af6614e6a48ab580581207239b7a88d71dc00ea3ca58",
     "depends": "cemu",
-    "post_install": [
-        "Copy-Item \"$dir\\keystone.dll\" \"$(versiondir 'cemu' 'current' $global)\"",
-        "Copy-Item \"$dir\\dbghelp.dll\" \"$(versiondir 'cemu' 'current' $global)\""
-]
+    "installer": {
+        "script": [
+            "Copy-Item \"$dir\\keystone.dll\" \"$(versiondir 'cemu' 'current' $global)\"",
+            "Copy-Item \"$dir\\dbghelp.dll\" \"$(versiondir 'cemu' 'current' $global)\""
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Remove-Item \"$(versiondir 'cemu' 'current' $global)\\keystone.dll\"",
+            "Remove-Item \"$(versiondir 'cemu' 'current' $global)\\dbghelp.dll\""
+        ]
+    },
+    "checkver": {
+        "re": "cemuhook_(?<cemu>[\\d_]+).zip\">Cemu hook ([\\d.]+) for"
+    },
+    "autoupdate": {
+        "url": "https://files.sshnuke.net/cemuhook_$matchCemu.zip"
+    }
 }
