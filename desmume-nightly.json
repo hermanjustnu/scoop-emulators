@@ -1,15 +1,15 @@
 {
     "homepage": "https://desmume.org",
-    "version": "20181226-c1357c1",
+    "version": "20180109-4a13a03",
     "license": "GPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://drive.google.com/uc?export=download&id=1QbtvGTkJGsTLKlFMRob7H2-NYGc4GT_M#/dl.zip",
-            "hash": "dd0837526c70699462f6ae810fa6e48cef01c9cecce6ac2888bccc10ebac2fe8"
+            "url": "https://drive.google.com/uc?export=download&id=1ELNaUd5XQ1lHaDSV0RiZ2_VVBvsJ_24p#/dl.zip",
+            "hash": "ef3c6e62a603568c0e7bd89517189312013fa76674b3986ee5202bba27a04b84"
         },
         "32bit": {
-            "url": "https://drive.google.com/uc?export=download&id=1d-aLYCUpnGqymeMsj7F45choq3jHmqEq#/dl.zip",
-            "hash": "cd5efb3050cf084b501e6c678bca7691dd9bba62fa132d7447b47d91e4e0588d"
+            "url": "https://drive.google.com/uc?export=download&id=1pRpw6pcLtdzQ_D1nA3Y6sFUwMPCYdPGk#/dl.zip",
+            "hash": "a9a49dd6d0cdaee12c6818b9a175253300242326da56edb6dc2f7401d4393288"
         }
     },
     "shortcuts": [
