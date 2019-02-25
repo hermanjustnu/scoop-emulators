@@ -1,9 +1,9 @@
 {
     "homepage": "https://citra-emu.org/",
-    "version": "1209",
+    "version": "1210",
     "license": "GPL-2.0",
-    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1209/citra-windows-mingw-20190225-93275d7.7z",
-    "hash": "fe90d1f3049d19a65a047370698c04538ecdf3aab71e16c9932a3b2a56337fca",
+    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1210/citra-windows-mingw-20190225-ad1cfc8.7z",
+    "hash": "593aa7dfda8b8119af9e4c6034612ef5b4b93fa0f18c551ada8517a5210b8a15",
     "extract_dir": "nightly-mingw",
     "shortcuts": [
         [
