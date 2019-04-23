@@ -1,11 +1,11 @@
 {
     "homepage": "http://www.snes9x.com/",
-    "version": "1.59.2",
+    "version": "1.60",
     "license": "https://raw.githubusercontent.com/snes9xgit/snes9x/master/LICENSE",
     "architecture": {
         "64bit": {
-            "url": "https://sites.google.com/site/bearoso/snes9x/snes9x-1.59.2-win32-x64.zip?attredirects=0&d=1",
-            "hash": "9fc5480ea219f6416d5c4364149115fb00f633ac8eec544851141a57b67c31f3",
+            "url": "https://sites.google.com/site/bearoso/snes9x/snes9x-1.60-win32-x64.zip?attredirects=0&d=1",
+            "hash": "d5914d166e6d9987429566b8ad70f42d8c851c87ababace738918966852a58a3",
             "shortcuts": [
                 [
                     "snes9x-x64.exe",
@@ -14,8 +14,8 @@
             ]
         },
         "32bit": {
-            "url": "https://sites.google.com/site/bearoso/snes9x/snes9x-1.59.2-win32.zip?attredirects=0&d=1",
-            "hash": "e33a7022eec8814270281330a1b9115a41aaf8bdf7285a9bde7c18999c7d3757",
+            "url": "https://sites.google.com/site/bearoso/snes9x/snes9x-1.60-win32.zip?attredirects=0&d=1",
+            "hash": "c373522f4e9872626fbc29fa9e83d06122530e53e2328d39811394ca391ef728",
             "shortcuts": [
                 [
                     "snes9x.exe",
