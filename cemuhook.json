@@ -1,8 +1,8 @@
 {
     "homepage": "https://cemuhook.sshnuke.net/",
-    "version": "0.5.7.1",
-    "url": "https://files.sshnuke.net/cemuhook_1154_0571.zip",
-    "hash": "257b36390cf757ea14ac18472e4ce3d1819925d36519578092935631ae19de0d",
+    "version": "0.5.7.2",
+    "url": "https://files.sshnuke.net/cemuhook_1155_0572.zip",
+    "hash": "07a1b23aed0743f2bab3887de14e6b3eff4c71f416166cc1523e3ede4ea50fbc",
     "depends": "cemu",
     "installer": {
         "script": [
