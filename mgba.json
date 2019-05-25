@@ -1,17 +1,17 @@
 {
     "homepage": "https://mgba.io",
-    "version": "0.7.1",
+    "version": "0.7.2",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mgba-emu/mgba/releases/download/0.7.1/mGBA-0.7.1-win64.7z",
-            "hash": "a4860b9968f44bc1d4a4408b688370fead50dc70d6d8feefdf3d8f7da9f65366",
-            "extract_dir": "mGBA-0.7.1-win64"
+            "url": "https://github.com/mgba-emu/mgba/releases/download/0.7.2/mGBA-0.7.2-win64.7z",
+            "hash": "bba851644a791d85e46206228f90015f9e053c1539fb35dafecca373f022c2df",
+            "extract_dir": "mGBA-0.7.2-win64"
         },
         "32bit": {
-            "url": "https://github.com/mgba-emu/mgba/releases/download/0.7.1/mGBA-0.7.1-win32.7z",
-            "hash": "706ad97111c1e66c113faafddcf16cfec67a710e2b2be40153d4ab5955bacefa",
-            "extract_dir": "mGBA-0.7.1-win32"
+            "url": "https://github.com/mgba-emu/mgba/releases/download/0.7.2/mGBA-0.7.2-win32.7z",
+            "hash": "851aee2d063820657136f1ea56bedccbdecc92e5a4338f8715a258457e941a1a",
+            "extract_dir": "mGBA-0.7.2-win32"
         }
     },
     "shortcuts": [
