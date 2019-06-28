@@ -1,8 +1,8 @@
 {
     "homepage": "https://yuzu-emu.org/",
-    "version": "2081",
-    "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/nightly-2081/yuzu-windows-mingw-20190626-5829ba1.7z",
-    "hash": "c7455f733ae3c1d99823ff1e67112776a8c0808d992f2922c9a0336b3b5156aa",
+    "version": "2082",
+    "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/nightly-2082/yuzu-windows-mingw-20190628-bb4a1e0.7z",
+    "hash": "50fe81ddebdd46d74147e8b6eb6e8e2c021229942854fef486b012f63f7d172d",
     "extract_dir": "nightly-mingw",
     "shortcuts": [
         [
