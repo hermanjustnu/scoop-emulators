@@ -10,6 +10,18 @@
             "FCEUX"
         ]
     ],
+    "installer": {
+        "script": [
+            "$file = 'fceux.cfg'",
+            "if (-not (Test-Path \"$persist_dir\\$file\")) {",
+            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
+            "    $outfile = \"$dir\\$file\"",
+            "    New-Item \"$outFile\" -Type File -Force | Out-Null",
+            "    $CONT = @('[Meta]', 'currentStylesheet=Darker Style by TheMitoSan')",
+            "    Set-Content \"$outFile\" ($CONT -join \"`r`n\") -Encoding Ascii",
+            "}"
+        ]
+    },
     "persist": [
         "cheats",
         "fcs",
