@@ -18,18 +18,6 @@
             "DeSmuME (Nightly)"
         ]
     ],
-    "installer": {
-        "script": [
-            "$file = 'desmume.ini'",
-            "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
-            "    $outfile = \"$dir\\$file\"",
-            "    New-Item \"$outFile\" -Type File -Force | Out-Null",
-            "    $CONT = @('[Meta]', 'currentStylesheet=Darker Style by TheMitoSan')",
-            "    Set-Content \"$outFile\" ($CONT -join \"`r`n\") -Encoding Ascii",
-            "}"
-        ]
-    },
     "persist": [
         "AviFiles",
         "Battery",
@@ -44,6 +32,9 @@
         "desmume.ini"
     ],
     "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\desmume.ini\")) {",
+        "    New-Item \"$dir\\desmume.ini\" -Type File | Out-Null",
+        "}",
         "if (!(test-path \"$dir\\DeSmuME.exe\")) {",
         "gci \"$dir\" \"DeSmuME*.exe\" |",
         "? { $_.Name -match '(?i)DeSmuME_git#[a-z\\d]{8}_x[\\d]{2}.exe' } |",

@@ -24,18 +24,11 @@
             ]
         }
     },
-    "installer": {
-        "script": [
-            "$file = 'snes9x.conf'",
-            "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
-            "    $outfile = \"$dir\\$file\"",
-            "    New-Item \"$outFile\" -Type File -Force | Out-Null",
-            "    $CONT = @('[Meta]', 'currentStylesheet=Darker Style by TheMitoSan')",
-            "    Set-Content \"$outFile\" ($CONT -join \"`r`n\") -Encoding Ascii",
-            "}"
-        ]
-    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\snes9x.conf\")) {",
+        "    New-Item \"$dir\\snes9x.conf\" -Type File | Out-Null",
+        "}"
+    ],
     "persist": [
         "Roms",
         "Screenshots",
