@@ -10,6 +10,9 @@
             "Yuzu"
         ]
     ],
+    "persist": [
+        "user"
+    ],
     "checkver": {
         "github": "https://github.com/yuzu-emu/yuzu-nightly",
         "re": "download/nightly-([\\d.]+)/yuzu-windows-mingw-(?<date>[\\d]{8})-(?<commit>[\\da-f]{7}).7z"
