@@ -18,6 +18,19 @@
             "DeSmuME (Nightly)"
         ]
     ],
+    "persist": [
+        "AviFiles",
+        "Battery",
+        "Cheats",
+        "Firmware",
+        "Lua",
+        "Roms",
+        "Screenshots",
+        "SramImportExport",
+        "States",
+        "StateSlots",
+        "desmume.ini"
+    ],
     "pre_install": [
         "if (!(test-path \"$dir\\DeSmuME.exe\")) {",
         "gci \"$dir\" \"DeSmuME*.exe\" |",

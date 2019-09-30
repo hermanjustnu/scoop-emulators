@@ -20,6 +20,9 @@
             "mGBA"
         ]
     ],
+    "persist": [
+        "config.ini"
+    ],
     "checkver": {
         "url": "https://github.com/mgba-emu/mgba/releases/latest",
         "re": "(?smi)\"/mgba-emu/mgba/releases/tag/([\\d.]+)\"(?<junk>.*)relative-time datetime=\"(?<date>[\\d]{4}-[\\d]{2}-[\\d]{2})T"
