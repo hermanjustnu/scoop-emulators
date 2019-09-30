@@ -20,6 +20,11 @@
             "mGBA"
         ]
     ],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
+        "    New-Item \"$dir\\config.ini\" -Type File | Out-Null",
+        "}"
+    ],
     "persist": [
         "config.ini"
     ],
