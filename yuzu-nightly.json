@@ -15,7 +15,7 @@
     ],
     "checkver": {
         "github": "https://github.com/yuzu-emu/yuzu-nightly",
-        "re": "download/nightly-([\\d.]+)/yuzu-windows-mingw-(?<date>[\\d]{8})-(?<commit>[\\da-f]{7}).7z"
+        "re": "download/nightly-([\\d.]+)/yuzu-windows-mingw-(?<date>[\\d]{8})-(?<commit>[\\da-f]{8}).7z"
     },
     "autoupdate": {
         "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/nightly-$version/yuzu-windows-mingw-$matchDate-$matchCommit.7z"
