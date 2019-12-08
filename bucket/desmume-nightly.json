@@ -18,19 +18,35 @@
             "DeSmuME (Nightly)"
         ]
     ],
+    "persist": [
+        "AviFiles",
+        "Battery",
+        "Cheats",
+        "Firmware",
+        "Lua",
+        "Roms",
+        "Screenshots",
+        "SramImportExport",
+        "States",
+        "StateSlots",
+        "desmume.ini"
+    ],
     "pre_install": [
-        "if (!(test-path \"$dir\\DeSmuME.exe\")) {",
-        "gci \"$dir\" \"DeSmuME*.exe\" |",
-        "? { $_.Name -match '(?i)DeSmuME_git#[a-z\\d]{8}_x[\\d]{2}.exe' } |",
-        "% {",
-        "warn \"Moving $($_.Name) to DeSmuMe.exe\"",
-        "mv \"$dir\\$($_.Name)\" \"$dir\\DeSmuMe.exe\"",
+        "if (!(Test-Path \"$persist_dir\\desmume.ini\")) {",
+        "    New-Item \"$dir\\desmume.ini\" -Type File | Out-Null",
         "}",
+        "if (!(Test-Path \"$dir\\DeSmuME.exe\")) {",
+        "    Get-ChildItem \"$dir\" \"DeSmuME*.exe\" |",
+        "    Where-Object { $_.Name -Match '(?i)DeSmuME_git#[a-z\\d]{8}_x[\\d]{2}.exe' } |",
+        "    ForEach-Object {",
+        "        warn \"Moving $($_.Name) to DeSmuMe.exe\"",
+        "        Move-Item -Force \"$dir\\$($_.Name)\" \"$dir\\DeSmuMe.exe\"",
+        "    }",
         "}"
     ],
     "checkver": {
         "url": "https://desmume.org/download/",
-        "re": "(?sm)<strong>(?<year>[\\d]{4})/(?<month>[\\d]{2})/(?<day>[\\d]{2}).*?git\\#(?<git>[a-z\\d]{7}).*?id=(?<one>.*?)\">Windows 32-bit.*?id=(?<two>.*?)\">Windows 64-bit",
+        "regex": "(?sm)<strong>(?<year>[\\d]{4})/(?<month>[\\d]{2})/(?<day>[\\d]{2}).*?git\\#(?<git>[a-z\\d]{7}).*?id=(?<one>.*?)\">Windows 32-bit.*?id=(?<two>.*?)\">Windows 64-bit",
         "replace": "${year}${month}${day}-${git}"
     },
     "autoupdate": {

@@ -24,6 +24,11 @@
             ]
         }
     },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\snes9x.conf\")) {",
+        "    New-Item \"$dir\\snes9x.conf\" -Type File | Out-Null",
+        "}"
+    ],
     "persist": [
         "Roms",
         "Screenshots",

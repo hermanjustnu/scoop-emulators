@@ -10,6 +10,11 @@
             "FCEUX"
         ]
     ],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\fceux.cfg\")) {",
+        "    New-Item \"$dir\\fceux.cfg\" -Type File | Out-Null",
+        "}"
+    ],
     "persist": [
         "cheats",
         "fcs",
@@ -20,7 +25,7 @@
     ],
     "checkver": {
         "url": "https://sourceforge.net/projects/fceultra/rss?path=/Binaries/",
-        "re": "Binaries/([\\d.]+)/fceux-[\\d.]+-win[\\d]{2}\\.zip"
+        "regex": "Binaries/([\\d.]+)/fceux-[\\d.]+-win[\\d]{2}\\.zip"
     },
     "autoupdate": {
         "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/$version/fceux-$version-win32.zip?r=scoop",

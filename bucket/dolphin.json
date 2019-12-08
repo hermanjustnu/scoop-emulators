@@ -11,13 +11,11 @@
         ]
     ],
     "suggest": {
-        "vcredist": [
-            "extras/vcredist2015"
-        ]
+        "vcredist": "extras/vcredist2015"
     },
     "checkver": {
         "url": "https://dolphin-emu.org/download/",
-        "re": "https://dl-mirror.dolphin-emu.org/([\\d.]+)/dolphin-x64"
+        "regex": "https://dl-mirror.dolphin-emu.org/([\\d.]+)/dolphin-x64"
     },
     "autoupdate": {
         "url": "https://dl-mirror.dolphin-emu.org/$version/dolphin-x64-$version.exe#/dl.7z"
