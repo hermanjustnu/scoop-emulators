@@ -1,8 +1,8 @@
 {
-    "homepage": "http://www.pj64-emu.com/",
+    "homepage": "https://www.pj64-emu.com/",
     "version": "2.3.2",
     "license": "GPL-2.0-only",
-    "url": "http://www.pj64-emu.com/file/setup-project64-v2-3-2-202-g57a221e",
+    "url": "https://www.pj64-emu.com/file/setup-project64-v2-3-2-202-g57a221e",
     "hash": "14139367a84b4ec6f7eaa89a82d96dbec4b264bcc83d822cc886ad5210d151c8",
     "innosetup": true,
     "shortcuts": [
@@ -20,10 +20,10 @@
         "ROMs"
     ],
     "checkver": {
-        "url": "http://www.pj64-emu.com/download/project64-latest",
+        "url": "https://www.pj64-emu.com/download/project64-latest",
         "re": "(?smi)<h3>Thank you for downloading Project64 v([\\d.]+)</h3>(?<temp>.*)<a href=\"/(?<url>file/setup-project64-v[\\d\\-a-z]+)/\">"
     },
     "autoupdate": {
-        "url": "http://www.pj64-emu.com/$matchUrl"
+        "url": "https://www.pj64-emu.com/$matchUrl"
     }
 }
