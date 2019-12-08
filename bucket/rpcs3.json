@@ -1,0 +1,53 @@
+{
+    "version": "0.0.7-9212",
+    "description": "RPCS3. Experimental open-source Sony PlayStation 3 emulator and debugger.",
+    "homepage": "https://rpcs3.net/",
+    "license": "GPL-2.0",
+    "suggest": {
+        "vcredist": "extras/vcredist2015"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-6a4ba9d562193228fc90e0d73252775cfafb20b2/rpcs3-v0.0.7-9212-6a4ba9d5_win64.7z",
+            "hash": "5c0e2bd2cfa360d4a2da94d6acb8b09d517d5626169f66b06fa497f3bd07b928"
+        }
+    },
+    "installer": {
+        "script": [
+            "$file = 'GuiConfigs\\CurrentSettings.ini'",
+            "if (-not (Test-Path \"$persist_dir\\$file\")) {",
+            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
+            "    $outfile = \"$dir\\$file\"",
+            "    New-Item \"$outFile\" -Type File -Force | Out-Null",
+            "    $CONT = @('[Meta]', 'currentStylesheet=Darker Style by TheMitoSan')",
+            "    Set-Content \"$outFile\" ($CONT -join \"`r`n\") -Encoding Ascii",
+            "}"
+        ]
+    },
+    "persist": [
+        "dev_hdd0",
+        "GuiConfigs"
+    ],
+    "shortcuts": [
+        [
+            "rpcs3.exe",
+            "RPCS3"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/RPCS3/rpcs3-binaries-win/",
+        "regex": "<a href=\".*/build-(?<commit>(?<cosi>\\w{8})\\w{32})/rpcs3-v(?<main>[\\d\\.]+-\\d{4})",
+        "replace": "${main}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-$matchCommit/rpcs3-v$version-$matchCosi_win64.7z",
+                "hash": {
+                    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/tag/build-$matchCommit/",
+                    "regex": "($sha256);"
+                }
+            }
+        }
+    }
+}
