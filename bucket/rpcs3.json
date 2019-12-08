@@ -1,8 +1,8 @@
 {
-    "version": "0.0.7-9212",
-    "description": "RPCS3. Experimental open-source Sony PlayStation 3 emulator and debugger.",
     "homepage": "https://rpcs3.net/",
+    "version": "0.0.7-9212",
     "license": "GPL-2.0",
+    "description": "RPCS3. Experimental open-source Sony PlayStation 3 emulator and debugger.",
     "suggest": {
         "vcredist": "extras/vcredist2015"
     },
@@ -16,7 +16,7 @@
         "script": [
             "$file = 'GuiConfigs\\CurrentSettings.ini'",
             "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
+            "    warn 'File' \"$file\" 'does not exists. Creating.'",
             "    $outfile = \"$dir\\$file\"",
             "    New-Item \"$outFile\" -Type File -Force | Out-Null",
             "    $CONT = @('[Meta]', 'currentStylesheet=Darker Style by TheMitoSan')",
@@ -36,15 +36,15 @@
     ],
     "checkver": {
         "github": "https://github.com/RPCS3/rpcs3-binaries-win/",
-        "regex": "<a href=\".*/build-(?<commit>(?<cosi>\\w{8})\\w{32})/rpcs3-v(?<main>[\\d\\.]+-\\d{4})",
-        "replace": "${main}"
+        "regex": "<a href=\".*/build-(?<long>([\\da-z]{40}))/rpcs3-v(?<version>[\\d\\.-]+)-(?<short>[\\da-z]{8})",
+        "replace": "${version}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-$matchCommit/rpcs3-v$version-$matchCosi_win64.7z",
+                "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-$matchLong/rpcs3-v$version-$matchShort_win64.7z",
                 "hash": {
-                    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/tag/build-$matchCommit/",
+                    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/tag/build-$matchLong/",
                     "regex": "($sha256);"
                 }
             }
