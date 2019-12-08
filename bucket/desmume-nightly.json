@@ -2,6 +2,7 @@
     "homepage": "https://desmume.org",
     "version": "20190318-be2735b",
     "license": "GPL-2.0",
+    "description": "DeSmuME is a Nintendo DS emulator",
     "architecture": {
         "64bit": {
             "url": "https://drive.google.com/uc?export=download&id=1WUhK2m-M0Z1GLj-4D3TF8MXYNJuJ0jpE#/dl.zip",
@@ -37,7 +38,7 @@
         "}",
         "if (!(Test-Path \"$dir\\DeSmuME.exe\")) {",
         "    Get-ChildItem \"$dir\" \"DeSmuME*.exe\" |",
-        "    Where-Object { $_.Name -Match '(?i)DeSmuME_git#[a-z\\d]{8}_x[\\d]{2}.exe' } |",
+        "    Where-Object { $_.Name -Match '(?i)DeSmuME_git#[\\da-z]+_x[\\d]{2}.exe' } |",
         "    ForEach-Object {",
         "        warn \"Moving $($_.Name) to DeSmuMe.exe\"",
         "        Move-Item -Force \"$dir\\$($_.Name)\" \"$dir\\DeSmuMe.exe\"",
@@ -46,7 +47,7 @@
     ],
     "checkver": {
         "url": "https://desmume.org/download/",
-        "regex": "(?sm)<strong>(?<year>[\\d]{4})/(?<month>[\\d]{2})/(?<day>[\\d]{2}).*?git\\#(?<git>[a-z\\d]{7}).*?id=(?<one>.*?)\">Windows 32-bit.*?id=(?<two>.*?)\">Windows 64-bit",
+        "regex": "(?sm)<strong>(?<year>[\\d]{4})/(?<month>[\\d]{2})/(?<day>[\\d]{2}).*?git\\#(?<git>[\\da-z]+).*?id=(?<one>.*?)\">Windows 32-bit.*?id=(?<two>.*?)\">Windows 64-bit",
         "replace": "${year}${month}${day}-${git}"
     },
     "autoupdate": {
