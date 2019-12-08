@@ -2,8 +2,9 @@
     "homepage": "http://www.fceux.com",
     "version": "2.2.3",
     "license": "GPL-2.0",
-    "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/2.2.3/fceux-2.2.3-win32.zip?r=scoop",
-    "hash": "md5:a36864ba6fc048a1296e7da1e157e09a",
+    "description": "FCEUX is a Nintendo Entertainment System (NES), Famicom, Famicom Disk System (FDS), and Dendy emulator.",
+    "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/2.2.3/fceux-2.2.3-win32.zip",
+    "hash": "sha1:98e228bb654f4470356850041c54e44ca5156107",
     "shortcuts": [
         [
             "fceux.exe",
@@ -28,10 +29,6 @@
         "regex": "Binaries/([\\d.]+)/fceux-[\\d.]+-win[\\d]{2}\\.zip"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/$version/fceux-$version-win32.zip?r=scoop",
-        "hash": {
-            "url": "https://sourceforge.net/projects/fceultra/rss?path=/Binaries/",
-            "find": "/(?:$basename)/download\" filesize=\"(?<size>[\\d]+)\"><media:hash algo=\"md5\">([a-fA-F0-9]{32})</media:hash>"
-        }
+        "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/$version/fceux-$version-win32.zip"
     }
 }
