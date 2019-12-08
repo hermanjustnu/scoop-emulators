@@ -1,7 +1,7 @@
 {
     "homepage": "https://dolphin-emu.org/",
     "version": "5.0-11364",
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-only",
     "url": "https://dl.dolphin-emu.org/builds/dolphin-master-5.0-11364-x64.7z",
     "hash": "2fae537d4b6f25e5c62e0e33b6ce67539734d2100220d39e65b63cf77875a17b",
     "extract_dir": "Dolphin-x64",

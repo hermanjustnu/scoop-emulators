@@ -1,8 +1,8 @@
 {
     "homepage": "https://www.retroarch.com/",
-    "description": "Frontend for emulators, game engines and media players.",
-    "license": "GPL-3.0-only",
     "version": "1.8.1",
+    "license": "GPL-3.0-only",
+    "description": "Frontend for emulators, game engines and media players.",
     "architecture": {
         "64bit": {
             "url": "https://buildbot.libretro.com/stable/1.8.1/windows/x86_64/RetroArch.7z",

@@ -1,7 +1,7 @@
 {
     "homepage": "https://desmume.org",
     "version": "20190318-be2735b",
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-only",
     "description": "DeSmuME is a Nintendo DS emulator",
     "architecture": {
         "64bit": {

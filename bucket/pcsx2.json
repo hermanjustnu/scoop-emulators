@@ -1,8 +1,8 @@
 {
-    "version": "1.4.0",
-    "description": "PCSX2 is a Playstation 2 'emulator', a free program that tries to replicate the Playstation 2 console to enable you to play PS2 games on your PC.",
     "homepage": "https://pcsx2.net",
+    "version": "1.4.0",
     "license": "LGPL-3.0-or-later",
+    "description": "PCSX2 is a Playstation 2 'emulator', a free program that tries to replicate the Playstation 2 console to enable you to play PS2 games on your PC.",
     "suggest": {
         "vcredist": "extras/vcredist2015"
     },

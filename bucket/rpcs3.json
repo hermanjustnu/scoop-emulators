@@ -1,7 +1,7 @@
 {
     "homepage": "https://rpcs3.net/",
     "version": "0.0.7-9212",
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-only",
     "description": "RPCS3. Experimental open-source Sony PlayStation 3 emulator and debugger.",
     "suggest": {
         "vcredist": "extras/vcredist2015"
