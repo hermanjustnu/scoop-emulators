@@ -1,6 +1,7 @@
 {
     "homepage": "http://cemu.info/",
     "version": "1.15.20d",
+    "license": "Freeware",
     "url": "http://cemu.info/releases/cemu_1.15.20.zip",
     "hash": "6a2e4c3a3834af7cb2fd41af6e2a47c1c65f57a63e20be017eae1d92311089ff",
     "extract_dir": "cemu_1.15.20",
@@ -29,7 +30,7 @@
         "cemuhook": "cemuhook"
     },
     "checkver": {
-        "re": "Download latest version \\(v((?<version>[\\d.]+)[\\w]*?),"
+        "regex": "Download latest version \\(v((?<version>[\\d.]+)[\\w]*?),"
     },
     "autoupdate": {
         "url": "http://cemu.info/releases/cemu_$matchVersion.zip",

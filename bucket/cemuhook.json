@@ -1,6 +1,7 @@
 {
     "homepage": "https://cemuhook.sshnuke.net/",
     "version": "0.5.7.3",
+    "license": "Freeware",
     "url": "https://files.sshnuke.net/cemuhook_1159_0573.zip",
     "hash": "21288935d934d5f02052dd2acdef82c71c4e090a7d7e6dffbdc64c2cbd1afef5",
     "depends": "cemu",
@@ -17,7 +18,7 @@
         ]
     },
     "checkver": {
-        "re": "cemuhook_(?<cemu>[\\d_]+).zip\">Cemu hook ([\\d.]+) for"
+        "regex": "cemuhook_(?<cemu>[\\d_]+).zip\">Cemu hook ([\\d.]+) for"
     },
     "autoupdate": {
         "url": "https://files.sshnuke.net/cemuhook_$matchCemu.zip"

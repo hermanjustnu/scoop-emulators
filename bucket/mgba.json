@@ -20,9 +20,16 @@
             "mGBA"
         ]
     ],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
+        "    New-Item \"$dir\\config.ini\" -Type File | Out-Null",
+        "}"
+    ],
+    "persist": [
+        "config.ini"
+    ],
     "checkver": {
-        "url": "https://github.com/mgba-emu/mgba/releases/latest",
-        "re": "(?smi)\"/mgba-emu/mgba/releases/tag/([\\d.]+)\"(?<junk>.*)relative-time datetime=\"(?<date>[\\d]{4}-[\\d]{2}-[\\d]{2})T"
+        "github": "https://github.com/mgba-emu/mgba"
     },
     "autoupdate": {
         "architecture": {
