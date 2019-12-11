@@ -7,7 +7,7 @@ There's no easy way to keep track of all existing emulators out there, and keep 
 Make sure [PowerShell 5](https://aka.ms/wmf5download) (or later, include [PowerShell Core](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6)) and [.NET Framework 4.5](https://www.microsoft.com/net/download) (or later) are installed. Then run:
 
     Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
-    
+
     # or shorter
     iwr -useb get.scoop.sh | iex
 Scoop will be installed by default on your user's home folder, likely on `C:\Users\<username>\scoop\`.
@@ -23,7 +23,7 @@ To find which apps are available to install (from all installed buckets), run
     scoop search
 
 #### Installing Emulators from the Scoop Bucket
-With the emulators' scoop bucket installed, run 
+With the emulators' scoop bucket installed, run
 
     scoop install <app-name>
     # examples:
