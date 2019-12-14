@@ -1,9 +1,9 @@
 {
     "homepage": "https://yuzu-emu.org/",
-    "version": "2429",
+    "version": "2430",
     "license": "GPL-2.0-only",
-    "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/nightly-2429/yuzu-windows-mingw-20191214-035ec7d.7z",
-    "hash": "4253baf0d5944635a67a275e3006c667dbb5b4b1c39ce1d8ffa8ecdcf4f84509",
+    "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/nightly-2430/yuzu-windows-mingw-20191214-ccda77c.7z",
+    "hash": "9c85dabe6993ab6828daeda804b60bb1ce31b2e548d0ac289485b7ec4cdf384b",
     "extract_dir": "nightly-mingw",
     "shortcuts": [
         [
