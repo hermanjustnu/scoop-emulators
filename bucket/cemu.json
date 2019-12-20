@@ -1,10 +1,10 @@
 {
     "homepage": "http://cemu.info/",
-    "version": "1.15.20f",
+    "version": "1.16.0c",
     "license": "Freeware",
-    "url": "http://cemu.info/releases/cemu_1.15.20.zip",
-    "hash": "59d019b52d15fd368a060f3cf7177f58e2a87d230f9d0a807c81ce99d3f9c464",
-    "extract_dir": "cemu_1.15.20",
+    "url": "http://cemu.info/releases/cemu_1.16.0.zip",
+    "hash": "ca46352877d5bb71629bcf3ea5252dceb859fd18a6d146a87759dd5d9686296a",
+    "extract_dir": "cemu_1.16.0",
     "shortcuts": [
         [
             "cemu.exe",
