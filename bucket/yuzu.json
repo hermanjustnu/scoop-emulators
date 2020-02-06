@@ -1,9 +1,9 @@
 {
     "homepage": "https://yuzu-emu.org/",
-    "version": "0-156",
+    "version": "0-157",
     "license": "GPL-2.0-only",
-    "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-156/yuzu-windows-msvc-20200205-301dcac8d.7z",
-    "hash": "fd69d5d3fb5951310d849d78c016d5ae79eb44a9c17980753e24182dce113a1d",
+    "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-157/yuzu-windows-msvc-20200206-9c98967e6.7z",
+    "hash": "56198a072f26bf6f6bfa9efd27a14dd6cc5c31d98efbf50f885b75254e4af8e6",
     "extract_dir": "yuzu-windows-msvc",
     "shortcuts": [
         [
