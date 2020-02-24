@@ -1,12 +1,12 @@
 {
     "homepage": "https://rpcs3.net/",
-    "version": "0.0.8-9700",
+    "version": "0.0.8-9701",
     "license": "GPL-2.0-only",
     "description": "RPCS3. Experimental open-source Sony PlayStation 3 emulator and debugger.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-7b49249f5f09a7864a4ed740491959fa656a288c/rpcs3-v0.0.8-9700-7b49249f_win64.7z",
-            "hash": "e241d704b0701acac945cb6fbdb6a39f3696c57e7b70dde18ccafcb887e6fc0d"
+            "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-f7666f44da5408bbfa38eb6a475bb75dfc1eaec8/rpcs3-v0.0.8-9701-f7666f44_win64.7z",
+            "hash": "91f7e2b70c9a18da6ba7787f3ad8101d51761ce8e8c98830853879946da692a1"
         }
     },
     "shortcuts": [
