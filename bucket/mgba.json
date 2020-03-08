@@ -5,12 +5,12 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/mgba-emu/mgba/releases/download/0.8.1/mGBA-0.8.1-win64.7z",
-            "hash": "28807107d5d1ddde914f716e3ac324f6c5abd30a0b787f39f3c64138fe2aa902",
+            "hash": "e2e375d83d360b8bca56f1e93f68e303ce651045f167a5444e51661fb39eb8ad",
             "extract_dir": "mGBA-0.8.1-win64"
         },
         "32bit": {
             "url": "https://github.com/mgba-emu/mgba/releases/download/0.8.1/mGBA-0.8.1-win32.7z",
-            "hash": "595ac4d035bc2beb067d96e9b8c51d7c1c5af3ecd30b81336c9d186fa9f4d6ac",
+            "hash": "afedd68babf416c71fd4386dd0c9c804ff8f5e8e6144399dfc5418245b02a8ff",
             "extract_dir": "mGBA-0.8.1-win32"
         }
     },
