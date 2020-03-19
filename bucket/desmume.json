@@ -38,7 +38,7 @@
         "}",
         "if (!(Test-Path \"$dir\\DeSmuME.exe\")) {",
         "    Get-ChildItem \"$dir\" \"DeSmuME*.exe\" |",
-        "    Where-Object { $_.Name -Match '(?i)DeSmuME_git#[\\da-z]+_x[\\d]{2}.exe' } |",
+        "    Where-Object { $_.Name -Match '(?i)DeSmuME_(git#[\\da-z]+|[\\d.]+)_x[\\d]{2}.exe' } |",
         "    ForEach-Object {",
         "        warn \"Moving $($_.Name) to DeSmuMe.exe\"",
         "        Move-Item -Force \"$dir\\$($_.Name)\" \"$dir\\DeSmuMe.exe\"",
