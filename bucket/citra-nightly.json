@@ -2,8 +2,12 @@
     "homepage": "https://citra-emu.org/",
     "version": "1442",
     "license": "GPL-2.0-only",
-    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1442/citra-windows-mingw-20200317-3738417.7z",
-    "hash": "08a8b83686b17be7cfbbf80c88b3441e395cc4849d6c03fc70f6918bcf6cf4db",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1442/citra-windows-mingw-20200317-3738417.7z",
+            "hash": "08a8b83686b17be7cfbbf80c88b3441e395cc4849d6c03fc70f6918bcf6cf4db"
+        }
+    },
     "extract_dir": "nightly-mingw",
     "shortcuts": [
         [
@@ -11,13 +15,20 @@
             "Citra (Nightly)"
         ]
     ],
-    "bin": "citra.exe",
+    "bin": [
+        "citra.exe",
+        "citra-room.exe"
+    ],
     "checkver": {
         "url": "https://github.com/citra-emu/citra-nightly/releases",
         "regex": "/citra-emu/citra-nightly/releases/download/nightly-([\\d]+)/citra-windows-(?<env>[\\w]+)-(?<commit>[\\d]{8}-[\\da-f]{7})\\.(?<zip>7z|zip)"
     },
     "autoupdate": {
-        "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-$version/citra-windows-$matchEnv-$matchCommit.$matchZip",
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-$version/citra-windows-$matchEnv-$matchCommit.$matchZip"
+            }
+        },
         "extract_dir": "nightly-$matchEnv"
     }
 }
