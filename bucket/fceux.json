@@ -25,9 +25,8 @@
         "fceux.cfg"
     ],
     "checkver": {
-        "url": "https://sourceforge.net/projects/fceultra/best_release.json",
-        "jsonpath": "$.release.filename",
-        "regex": "([\\d.]+)/fceux-[\\d.]+-win32\\.zip"
+        "url": "https://sourceforge.net/projects/fceultra/rss?path=/Binaries/",
+        "regex": "Binaries/([\\d.]+)/fceux-[\\d.]+-win[\\d]{2}\\.zip"
     },
     "autoupdate": {
         "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/$version/fceux-$version-win32.zip"
