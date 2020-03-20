@@ -2,8 +2,12 @@
     "homepage": "https://cemu.info/",
     "version": "1.17.4",
     "license": "Freeware",
-    "url": "https://cemu.info/releases/cemu_1.17.4.zip",
-    "hash": "36e046b2c6e73e9eb7e2c3b38071efe66426b8375c4a8ace741fb1cde34cc3d9",
+    "architecture": {
+        "64bit": {
+            "url": "https://cemu.info/releases/cemu_1.17.4.zip",
+            "hash": "36e046b2c6e73e9eb7e2c3b38071efe66426b8375c4a8ace741fb1cde34cc3d9"
+        }
+    },
     "extract_dir": "cemu_1.17.4",
     "shortcuts": [
         [
@@ -33,7 +37,11 @@
         "regex": "Download latest version \\(v((?<version>[\\d.]+)[\\w]*?),"
     },
     "autoupdate": {
-        "url": "https://cemu.info/releases/cemu_$matchVersion.zip",
+        "architecture": {
+            "64bit": {
+                "url": "https://cemu.info/releases/cemu_$matchVersion.zip"
+            }
+        },
         "extract_dir": "cemu_$matchVersion"
     }
 }
