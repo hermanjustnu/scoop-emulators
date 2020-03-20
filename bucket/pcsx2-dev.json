@@ -1,0 +1,27 @@
+{
+    "homepage": "https://pcsx2.net",
+    "version": "1.5.0-3396-69b97dc3a",
+    "license": "LGPL-3.0-or-later",
+    "description": "PCSX2 is a Playstation 2 'emulator', a free program that tries to replicate the Playstation 2 console to enable you to play PS2 games on your PC.",
+    "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.5.0-dev-3396-g69b97dc3a&platform=windows-x86#/dl.7z",
+    "hash": "c12bda19b88b6390f59b08512d566247fe5126763644e72c02a3c8f059f5c2d4",
+    "extract_dir": "pcsx2-v1.5.0-dev-3396-g69b97dc3a-windows-x86",
+    "shortcuts": [
+        [
+            "pcsx2.exe",
+            "PCSX2 (Development build)"
+        ]
+    ],
+    "suggest": {
+        "vcredist": "extras/vcredist2015"
+    },
+    "checkver": {
+        "url": "https://buildbot.orphis.net/pcsx2/index.php",
+        "regex": "rev=v(?<version>[\\d.]+)-dev-(?<build>[\\d]+)-g(?<commit>[\\da-fA-F]+)&(?:amp;)platform=windows-x86",
+        "replace": "${version}-${build}-${commit}"
+    },
+    "autoupdate": {
+        "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v$matchVersion-dev-$matchBuild-g$matchCommit&platform=windows-x86#/dl.7z",
+        "extract_dir": "pcsx2-v$matchVersion-dev-$matchBuild-g$matchCommit-windows-x86"
+    }
+}
