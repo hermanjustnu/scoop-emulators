@@ -46,9 +46,8 @@
         "}"
     ],
     "checkver": {
-        "url": "https://sourceforge.net/projects/desmume/best_release.json",
-        "jsonpath": "$.release.filename",
-        "regex": "([\\d.]+)/desmume-[\\d.]+-win[\\d]{2}\\.zip"
+        "url": "https://sourceforge.net/projects/desmume/rss?path=/desmume",
+        "regex": "desmume/([\\d.]+)/desmume-[\\d.]+-win[\\d]{2}\\.zip"
     },
     "autoupdate": {
         "architecture": {
