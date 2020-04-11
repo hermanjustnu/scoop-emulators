@@ -1,11 +1,11 @@
 {
     "homepage": "https://yuzu-emu.org/",
-    "version": "0-223",
+    "version": "0-224",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-223/yuzu-windows-msvc-20200410-2b4661df6.7z",
-            "hash": "9fe04980f68d07b38e4330d07bcd9d5cb9061d946189362f10b6becfaf248628"
+            "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-224/yuzu-windows-msvc-20200411-6d1ddafe1.7z",
+            "hash": "645f08bb1a0afb341bd5ca75c0cf95ab603f84665892f00d2df8984d497b2be9"
         }
     },
     "extract_dir": "yuzu-windows-msvc",
