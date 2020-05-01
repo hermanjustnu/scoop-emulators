@@ -1,11 +1,11 @@
 {
     "homepage": "https://cemu.info/",
-    "version": "1.18.2b",
+    "version": "1.18.2c",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://cemu.info/releases/cemu_1.18.2.zip",
-            "hash": "50b143c085d74ebdc9661bcb47ee2ca60870c78b931d9a5e9dd315d25e55a19b"
+            "hash": "c716a6fb1c30ce1891ff5fb9b277744decadba534eddf230efca39f5c2cfd56c"
         }
     },
     "extract_dir": "cemu_1.18.2",
