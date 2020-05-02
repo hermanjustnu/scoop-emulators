@@ -1,11 +1,11 @@
 {
     "homepage": "https://citra-emu.org/",
-    "version": "1726",
+    "version": "1727",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/citra-emu/citra-canary/releases/download/canary-1726/citra-windows-mingw-20200502-ce609a8.7z",
-            "hash": "6d57ebce35e64eaffe3fc87cfbc4683129c21f005ca0b5d387468d8d0424c417"
+            "url": "https://github.com/citra-emu/citra-canary/releases/download/canary-1727/citra-windows-mingw-20200502-c3bf506.7z",
+            "hash": "55293efcb480eef971acf11d94308d8ff1deb57e5fd930d43e4df5a92351fe28"
         }
     },
     "extract_dir": "canary-mingw",
