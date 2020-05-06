@@ -1,0 +1,42 @@
+{
+    "homepage": "https://stella-emu.github.io/",
+    "version": "6.1.2",
+    "license": {
+        "identifier": "GPL-2.0-or-later",
+        "url": "https://github.com/stella-emu/stella/raw/master/LICENSE.TXT"
+    },
+    "description": "Apple II emulator for Windows",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/stella-emu/stella/releases/download/6.1.2/Stella-6.1.2-x64.exe",
+            "hash": "2014699c927af0345e6fd227777aa2a80045ad11c9082275e275979fa7a8e811"
+        },
+        "32bit": {
+            "url": "https://github.com/stella-emu/stella/releases/download/6.1.2/Stella-6.1.2-win32.exe",
+            "hash": "b107556465e56bed3dde0d1f6179c8c8d5c970ef5299c1ceb9a7627732e27dba"
+        }
+    },
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "Stella.exe",
+            "Stella"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/stella-emu/stella"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/stella-emu/stella/releases/download/$version/Stella-$version-x64.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/stella-emu/stella/releases/download/$version/Stella-$version-win32.exe"
+            }
+        }
+    },
+    "suggest": {
+        "vcredist": "extras/vcredist2017"
+    }
+}
