@@ -1,6 +1,6 @@
 {
     "homepage": "https://desmume.org",
-    "version": "0.0.0.647-76fafe02",
+    "version": "0.9.12-647-76fafe02",
     "license": "GPL-2.0-only",
     "description": "DeSmuME is a Nintendo DS emulator",
     "architecture": {
@@ -35,8 +35,8 @@
     ],
     "checkver": {
         "url": "https://ci.appveyor.com/api/projects/zeromus/desmume",
-        "regex": "(?smi)\"jobId\":\"(?<x64jid>[\\da-z]{16})\",\"name\":\"\",\"osType\":\"Windows\".*\"version\":\"(?<build>[\\d.]+)\".*\"commitId\":\"(?<commit>[\\da-f]{8})",
-        "replace": "${build}-${commit}"
+        "regex": "(?smi)\"jobId\":\"(?<x64jid>[\\da-z]{16})\",\"name\":\"\",\"osType\":\"Windows\".*\"buildNumber\":(?<build>[\\d]+).*\"commitId\":\"(?<commit>[\\da-f]{8})",
+        "replace": "0.9.12-${build}-${commit}"
     },
     "autoupdate": {
         "architecture": {
