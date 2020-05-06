@@ -1,22 +1,18 @@
 {
     "homepage": "https://desmume.org",
-    "version": "0.9.11",
+    "version": "0.0.0.647-76fafe02",
     "license": "GPL-2.0-only",
     "description": "DeSmuME is a Nintendo DS emulator",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/desmume/desmume/0.9.11/desmume-0.9.11-win64.zip",
-            "hash": "sha1:0de5ef3e7712e25b0bba4fd4ef4700eca10c6066"
-        },
-        "32bit": {
-            "url": "https://downloads.sourceforge.net/project/desmume/desmume/0.9.11/desmume-0.9.11-win32.zip",
-            "hash": "sha1:3040b9c5457f623c33b98cbeb7f35343aaf6748e"
+            "url": "https://ci.appveyor.com/api/buildjobs/lf2r0po6au5d96rj/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2019-x64-Release.exe#/DeSmuMe.exe",
+            "hash": "2f8036fcc241b7fd828d510deae9ec5a9d1c67a4016ab0e3ca66342c0d72ee88"
         }
     },
     "shortcuts": [
         [
             "DeSmuME.exe",
-            "DeSmuME"
+            "DeSmuME (autobuilds)"
         ]
     ],
     "persist": [
@@ -35,27 +31,17 @@
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\desmume.ini\")) {",
         "    New-Item \"$dir\\desmume.ini\" -Type File | Out-Null",
-        "}",
-        "if (!(Test-Path \"$dir\\DeSmuME.exe\")) {",
-        "    Get-ChildItem \"$dir\" \"DeSmuME*.exe\" |",
-        "    Where-Object { $_.Name -Match '(?i)DeSmuME_(git#[\\da-z]+|[\\d.]+)_x[\\d]{2}.exe' } |",
-        "    ForEach-Object {",
-        "        warn \"Moving $($_.Name) to DeSmuMe.exe\"",
-        "        Move-Item -Force \"$dir\\$($_.Name)\" \"$dir\\DeSmuMe.exe\"",
-        "    }",
         "}"
     ],
     "checkver": {
-        "url": "https://sourceforge.net/projects/desmume/rss?path=/desmume",
-        "regex": "desmume/([\\d.]+)/desmume-[\\d.]+-win[\\d]{2}\\.zip"
+        "url": "https://ci.appveyor.com/api/projects/zeromus/desmume",
+        "regex": "(?smi)\"jobId\":\"(?<x64jid>[\\da-z]{16})\",\"name\":\"\",\"osType\":\"Windows\".*\"version\":\"(?<build>[\\d.]+)\".*\"commitId\":\"(?<commit>[\\da-f]{8})",
+        "replace": "${build}-${commit}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win64.zip"
-            },
-            "32bit": {
-                "url": "https://downloads.sourceforge.net/project/desmume/desmume/$version/desmume-$version-win32.zip"
+                "url": "https://ci.appveyor.com/api/buildjobs/$matchX64jid/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2019-x64-Release.exe#/DeSmuMe.exe"
             }
         }
     }
