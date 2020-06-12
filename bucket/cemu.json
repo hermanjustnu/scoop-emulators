@@ -1,14 +1,14 @@
 {
     "homepage": "https://cemu.info/",
-    "version": "1.19.1b",
+    "version": "1.19.2b",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://cemu.info/releases/cemu_1.19.1.zip",
-            "hash": "4bae74c50c9866a0378c4b23c1e9d02de7586787992501351eaee21f91b8db68"
+            "url": "https://cemu.info/releases/cemu_1.19.2.zip",
+            "hash": "a9e4516e9ee238c39d4955f71b002b8b12d10488687ae34b7ae228d9a5cc96f5"
         }
     },
-    "extract_dir": "cemu_1.19.1",
+    "extract_dir": "cemu_1.19.2",
     "shortcuts": [
         [
             "cemu.exe",
