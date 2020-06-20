@@ -1,6 +1,6 @@
 {
     "homepage": "https://stella-emu.github.io/",
-    "version": "6.2",
+    "version": "6.2.1",
     "license": {
         "identifier": "GPL-2.0-or-later",
         "url": "https://github.com/stella-emu/stella/raw/master/LICENSE.TXT"
@@ -8,12 +8,12 @@
     "description": "Apple II emulator for Windows",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/stella-emu/stella/releases/download/6.2/Stella-6.2-x64.exe",
-            "hash": "cb519c672f2e39a29050f21e3e751e715abd9adefd4b9ea1ee98fd0a0dac7eb7"
+            "url": "https://github.com/stella-emu/stella/releases/download/6.2.1/Stella-6.2.1-x64.exe",
+            "hash": "a818f3bae02e17b22cc97918c4eded1ef066ad5e1875bda602e5baf19ce9f9aa"
         },
         "32bit": {
-            "url": "https://github.com/stella-emu/stella/releases/download/6.2/Stella-6.2-win32.exe",
-            "hash": "75204772dc5f5ab834cf29f49b8ad140bd749902838068cb7ec7b4b5d3ec3c9f"
+            "url": "https://github.com/stella-emu/stella/releases/download/6.2.1/Stella-6.2.1-win32.exe",
+            "hash": "b56a641c8e4d7756f25e2f719946bad83df1f508333e9fd70d9962321e08ba4b"
         }
     },
     "innosetup": true,
