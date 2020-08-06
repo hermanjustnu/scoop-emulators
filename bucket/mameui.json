@@ -1,11 +1,11 @@
 {
     "homepage": "http://www.mameui.info/",
-    "version": "0.222",
+    "version": "0.223",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
             "url": "http://www.mameui.info/MAMEUI64.7z",
-            "hash": "e37dfb556e2381e7de9a7c05cd1d1f9c5642d1b8a09adbee0a353104614f2a0b",
+            "hash": "a183aa2de343e36884727ab285c53857bda54f7c48e72447e82cabb4c4257afe",
             "extract_dir": "MAMEUI64",
             "shortcuts": [
                 [
