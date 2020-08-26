@@ -1,11 +1,11 @@
 {
     "homepage": "http://mamedev.org/",
-    "version": "0.223",
+    "version": "0.224",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mamedev/mame/releases/download/mame0223/mame0223b_64bit.exe#/dl.7z",
-            "hash": "3c910c89a94127d0e9b27a37487d81dadfdadf7007040fe70b24a112a95c219f",
+            "url": "https://github.com/mamedev/mame/releases/download/mame0224/mame0224b_64bit.exe#/dl.7z",
+            "hash": "3311897692deaeb68742a7ac2d47e79e65e23b76ad731a2ab7fdee98f0bf8c52",
             "bin": [
                 [
                     "mame64.exe",
