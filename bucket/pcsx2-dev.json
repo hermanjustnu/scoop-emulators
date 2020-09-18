@@ -1,11 +1,11 @@
 {
     "homepage": "https://pcsx2.net",
-    "version": "1.7.0-239-366e7b9db",
+    "version": "1.7.0-240-07eb0770c",
     "license": "LGPL-3.0-or-later",
     "description": "PCSX2 is a Playstation 2 'emulator', a free program that tries to replicate the Playstation 2 console to enable you to play PS2 games on your PC.",
-    "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.7.0-dev-239-g366e7b9db&platform=windows-x86#/dl.7z",
-    "hash": "fef5189e7c0e9317b201320c222b11ef4365c32e3470cd942a475389531e7238",
-    "extract_dir": "pcsx2-v1.7.0-dev-239-g366e7b9db-windows-x86",
+    "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.7.0-dev-240-g07eb0770c&platform=windows-x86#/dl.7z",
+    "hash": "8e928b44541fe6fb2b9e2869c005c6756cd00c36262bfa4be29bbef722e9ad3c",
+    "extract_dir": "pcsx2-v1.7.0-dev-240-g07eb0770c-windows-x86",
     "shortcuts": [
         [
             "pcsx2.exe",
