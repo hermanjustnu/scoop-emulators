@@ -5,12 +5,12 @@
     "architecture": {
         "64bit": {
             "url": "https://www.scummvm.org/frs/scummvm/2.2.1/scummvm-2.2.1-win32-x86_64.zip",
-            "hash": "b93268b57486f09581e542488b4d843fb851046d905e6db437e4c3ffb1a38503",
+            "hash": "21e82083e05e4c3ea23bc44cb28face165c0ba3f4583876eeac6cc54f530f894",
             "extract_dir": "scummvm-2.2.1-win32-x86_64"
         },
         "32bit": {
             "url": "https://www.scummvm.org/frs/scummvm/2.2.1/scummvm-2.2.1-win32.zip",
-            "hash": "ba4c26bb431dcba4198647853673c0aeffe3d69569657b815e6e2f03f4b248da",
+            "hash": "669f8678dac284cae5b7f3d2a01002dc9364ac90bbc0985fe09be55184aba9f9",
             "extract_dir": "scummvm-2.2.1-win32"
         }
     },
