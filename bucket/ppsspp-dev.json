@@ -1,6 +1,6 @@
 {
     "homepage": "https://www.ppsspp.org/",
-    "version": "1.10.3-1235-ded92e51d",
+    "version": "1.10.3-1237-7de4801e8",
     "license": {
         "identifier": "GPL-2.0-or-later",
         "url": "https://github.com/hrydgard/ppsspp/raw/master/LICENSE.TXT"
@@ -8,8 +8,8 @@
     "description": "PPSSPP is a Playstation emulator that can run your PSP games in full HD resolution",
     "architecture": {
         "64bit": {
-            "url": "https://buildbot.orphis.net/ppsspp/index.php?m=dl&rev=v1.10.3-1235-gded92e51d&platform=windows-amd64#/dl.7z",
-            "hash": "15370bfef5b3fff294f568bee69caf44250ec197ed0a3fc957f4a3414dbc679f",
+            "url": "https://buildbot.orphis.net/ppsspp/index.php?m=dl&rev=v1.10.3-1237-g7de4801e8&platform=windows-amd64#/dl.7z",
+            "hash": "5e644c2cc4b7badb55047f764609477110fa5856bb7bd4a2762087d17b2b3d09",
             "shortcuts": [
                 [
                     "PPSSPPWindows64.exe",
@@ -18,8 +18,8 @@
             ]
         },
         "32bit": {
-            "url": "https://buildbot.orphis.net/ppsspp/index.php?m=dl&rev=v1.10.3-1235-gded92e51d&platform=windows-x86#/dl.7z",
-            "hash": "b9eba9d8df059e3ecd94c4dd6679269fe8ef944292f514d4215025fd3590db92",
+            "url": "https://buildbot.orphis.net/ppsspp/index.php?m=dl&rev=v1.10.3-1237-g7de4801e8&platform=windows-x86#/dl.7z",
+            "hash": "735bedfa8ca177033d8a898431fc760ec393108288b4a38b5031b700e74252e8",
             "shortcuts": [
                 [
                     "PPSSPPWindows.exe",
