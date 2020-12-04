@@ -1,0 +1,40 @@
+{
+    "homepage": "https://www.scummvm.org/",
+    "version": "202012030628-b971c71e",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w64-master-b971c71e.zip",
+            "hash": "c6d1bd06fc2a6cdb1c187c3daa5c65a5018d964aef3f23c92e912dc98ce6db9f",
+            "extract_dir": "mingw-w64-master-b971c71e"
+        },
+        "32bit": {
+            "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w32-master-b971c71e.zip",
+            "hash": "68c5db3ae1b08782aaa0c2a934f03b10f39c3ff6aecc7bba0401584e95f6a1b8",
+            "extract_dir": "mingw-w32-master-b971c71e"
+        }
+    },
+    "shortcuts": [
+        [
+            "scummvm.exe",
+            "ScummVM (Nightly)"
+        ]
+    ],
+    "checkver": {
+        "url": "https://buildbot.scummvm.org/snapshots/master/?C=M;O=D",
+        "regex": "mingw-w64-master-(?<commit>[\\da-z]{8})\\.zip</a>\\s+(?<date>(?<year>[\\d]{4})-(?<month>[\\d]{2})-(?<day>[\\d]{2})\\s(?<hour>[\\d]{2})\\:(?<minute>[\\d]{2}))",
+        "replace": "${year}${month}${day}${hour}${minute}-${commit}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w64-master-$matchCommit.zip",
+                "extract_dir": "mingw-w64-master-$matchCommit"
+            },
+            "32bit": {
+                "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w32-master-$matchCommit.zip",
+                "extract_dir": "mingw-w32-master-$matchCommit"
+            }
+        }
+    }
+}
