@@ -1,17 +1,17 @@
 {
     "homepage": "https://www.scummvm.org/",
-    "version": "202101020532-8ede0e39",
+    "version": "202101030541-adb85da1",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w64-master-8ede0e39.zip",
-            "hash": "bd4357d331db08cf067009ce1228d57cdac03e0cd027fc81501393a49b1ab24c",
-            "extract_dir": "mingw-w64-master-8ede0e39"
+            "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w64-master-adb85da1.zip",
+            "hash": "0fdebdbc64a1258f50066d5722def6705b0d3204ca27d29b3af5bce39f001fad",
+            "extract_dir": "mingw-w64-master-adb85da1"
         },
         "32bit": {
-            "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w32-master-8ede0e39.zip",
-            "hash": "49605817b84868967a34dcb3bccac5dc8a95634136cd642fd405dad8cc692f11",
-            "extract_dir": "mingw-w32-master-8ede0e39"
+            "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w32-master-adb85da1.zip",
+            "hash": "03609c05362aa0b04f2b85f32d0c29fd23bbafd6ad0d4c72a2fe9702952c1f99",
+            "extract_dir": "mingw-w32-master-adb85da1"
         }
     },
     "shortcuts": [
