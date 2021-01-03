@@ -1,11 +1,11 @@
 {
     "homepage": "https://citra-emu.org/",
-    "version": "1674",
+    "version": "1675",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1674/citra-windows-mingw-20210101-9c76120.7z",
-            "hash": "5484db1b5b3185c02a2832baed6d3b98715ea221664adef0ca1554b466ea643a"
+            "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1675/citra-windows-mingw-20210103-755393d.7z",
+            "hash": "bdef1a7938cb34550aad4991e7cfd23da3dc01c53f4155a6b2a4d18fca0cc924"
         }
     },
     "extract_dir": "nightly-mingw",
