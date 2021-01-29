@@ -1,14 +1,14 @@
 {
     "homepage": "https://cemu.info/",
-    "version": "1.22.4",
+    "version": "1.22.5b",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://cemu.info/releases/cemu_1.22.4.zip",
-            "hash": "53619a10ba8bf3d97d3ff20003878c1ce025523f981d416101e7091a2fc9b2c4"
+            "url": "https://cemu.info/releases/cemu_1.22.5.zip",
+            "hash": "da497dbdb374d66d59d7a817760a5c5c342f9ebe56616da002e53f1c3a104bc6"
         }
     },
-    "extract_dir": "cemu_1.22.4",
+    "extract_dir": "cemu_1.22.5",
     "shortcuts": [
         [
             "cemu.exe",
