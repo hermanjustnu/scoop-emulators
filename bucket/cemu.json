@@ -1,11 +1,11 @@
 {
     "homepage": "https://cemu.info/",
-    "version": "1.22.6b",
+    "version": "1.22.6c",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://cemu.info/releases/cemu_1.22.6.zip",
-            "hash": "07364320bbf63ce0f1fafbc8ff85154f1987f16af1c76c06047118ee03cf6a24"
+            "hash": "4154c7c0c9bb3fbfc7802a4329f7a144e7c53e530f273c4d04e3b938302cb7c1"
         }
     },
     "extract_dir": "cemu_1.22.6",
