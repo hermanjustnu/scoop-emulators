@@ -1,12 +1,12 @@
 {
-    "version": "alpha14-118-gf1e594f5",
+    "version": "alpha14-119-g94d9c5ad",
     "description": "Pegasus is a graphical frontend for browsing your game library and launching all kinds of emulators from the same place",
     "homepage": "https://pegasus-frontend.org/",
     "license": "GPLv3",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mmatyas/pegasus-frontend/releases/download/continuous/pegasus-fe_alpha14-118-gf1e594f5_win-mingw-static.zip",
-            "hash": "71f4b64caed75dec001d4b66ec979b5ee17e4feb93144687fbaf1127b6c1e0b5"
+            "url": "https://github.com/mmatyas/pegasus-frontend/releases/download/continuous/pegasus-fe_alpha14-119-g94d9c5ad_win-mingw-static.zip",
+            "hash": "72d12ce228b322f0351a32bc26b23c1bfbc6a7b292b91724dc7054df65c1ac47"
         }
     },
     "shortcuts": [
