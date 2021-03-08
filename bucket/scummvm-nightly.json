@@ -1,17 +1,17 @@
 {
     "homepage": "https://www.scummvm.org/",
-    "version": "202103070638-77bab475",
+    "version": "202103080618-37b563ef",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w64-master-77bab475.zip",
-            "hash": "f1c0401b05a70782c7e808f3b44901ae38b297ba292faf0303470de5b47c136b",
-            "extract_dir": "mingw-w64-master-77bab475"
+            "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w64-master-37b563ef.zip",
+            "hash": "615784c6c45dcc6227222f6713d45887c8cfdf25d04752b29234552fe8ab6833",
+            "extract_dir": "mingw-w64-master-37b563ef"
         },
         "32bit": {
-            "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w32-master-77bab475.zip",
-            "hash": "8a77e6db939fdec4e9da1c9dba3decf1b6a7d968d4c72c0d1b14c8bb575e59aa",
-            "extract_dir": "mingw-w32-master-77bab475"
+            "url": "https://buildbot.scummvm.org/snapshots/master/mingw-w32-master-37b563ef.zip",
+            "hash": "65888807180270702961df96f63213d926b795aaf8a6ccee411e9926e7ea4795",
+            "extract_dir": "mingw-w32-master-37b563ef"
         }
     },
     "shortcuts": [
