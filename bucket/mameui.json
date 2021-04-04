@@ -1,28 +1,28 @@
 {
     "homepage": "http://www.mameui.info/",
-    "version": "0.229",
+    "version": "0.230",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "http://www.mameui.info/MAMEUI64.7z",
-            "hash": "d6145c1ca603f1308b5875debe08c799d73b3991a7f6dca9b315751c8d8d228d",
-            "extract_dir": "MAMEUI64",
+            "url": "http://www.mameui.info/MAMEUI.7z",
+            "hash": "E17ED54D7D760F22910E21A69F9D26AA1EAA01A9104CE8969E68115AF923066C",
+            "extract_dir": "MAMEUI",
             "shortcuts": [
                 [
-                    "mameui64.exe",
+                    "MAMEUI.exe",
                     "MAMEUI"
                 ]
             ]
         }
     },
     "checkver": {
-        "regex": "MAMEUI64 v\\.([\\d]+) Download",
+        "regex": "MAMEUI v\\.([\\d]+) Download",
         "replace": "0.${1}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.mameui.info/MAMEUI64.7z"
+                "url": "http://www.mameui.info/MAMEUI.7z"
             }
         }
     }
