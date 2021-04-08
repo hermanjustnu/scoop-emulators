@@ -1,0 +1,29 @@
+{
+    "homepage": "https://www.pj64-emu.com/",
+    "version": "2.4.0-1794-gd8503d6",
+    "license": "GPL-2.0-only",
+    "url": "https://www.pj64-emu.com/file/setup-project64-v2-4-0-1794-gd8503d6/",
+    "hash": "8cfd4635f4c712685d18b1c7717dadd1e141715e927df07036ecaeff4fbe8c98",
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "Project64.exe",
+            "Project64 (Nightly)"
+        ]
+    ],
+    "persist": [
+        "Config",
+        "Logs",
+        "Save",
+        "Screenshots",
+        "Textures",
+        "ROMs"
+    ],
+    "checkver": {
+        "url": "https://www.pj64-emu.com/nightly-builds",
+        "regex": "v((?<major>[\\d]+)\\.(?<minor>[\\d]+)\\.(?<patch>[\\d]+)-(?<build>[\\d]+)-(?<commit>g[\\da-f]+))"
+    },
+    "autoupdate": {
+        "url": "https://www.pj64-emu.com/file/setup-project64-v$dashVersion/"
+    }
+}
