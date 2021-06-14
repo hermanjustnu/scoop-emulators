@@ -1,16 +1,16 @@
 {
     "homepage": "https://www.retroarch.com/",
-    "version": "1.9.4",
+    "version": "1.9.5",
     "license": "GPL-3.0-only",
     "description": "Frontend for emulators, game engines and media players.",
     "architecture": {
         "64bit": {
-            "url": "https://buildbot.libretro.com/stable/1.9.4/windows/x86_64/RetroArch.7z",
-            "hash": "fc48ce12426f6b731479cd9b51cb6e83594f70b7a55adb448915f5e52a629abc"
+            "url": "https://buildbot.libretro.com/stable/1.9.5/windows/x86_64/RetroArch.7z",
+            "hash": "d1566824d4d534713755e7cf6267e921efb21bf37a4134629f56ad614bd15464"
         },
         "32bit": {
-            "url": "https://buildbot.libretro.com/stable/1.9.4/windows/x86/RetroArch.7z",
-            "hash": "9fd513b412f19678d0d8d0eef27c6a0a0faddcd8a698fd037b4ccd4c804e8d0f"
+            "url": "https://buildbot.libretro.com/stable/1.9.5/windows/x86/RetroArch.7z",
+            "hash": "8507ebcb1c404625d892c3dc16a272bc06c66e61a480a589a1fab45dd573d964"
         }
     },
     "pre_install": [
