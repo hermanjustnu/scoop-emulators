@@ -1,11 +1,11 @@
 {
     "homepage": "https://cemu.info/",
-    "version": "1.25.3b",
+    "version": "1.25.3c",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://cemu.info/releases/cemu_1.25.3.zip",
-            "hash": "a363472c55639efbd15b84a355e7841951e1204f4650f7f6997e9da6e79e5f4d"
+            "hash": "15baec905eea7aebcb3047835797dbc6afbb5fd310342ec39f4bc5865ce911ef"
         }
     },
     "extract_dir": "cemu_1.25.3",
