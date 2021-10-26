@@ -18,6 +18,7 @@
         "    New-Item \"$dir\\retroarch.cfg\" -Type File | Out-Null",
         "}"
     ],
+    "extract_dir": "RetroArch-Win64",
     "bin": "retroarch.exe",
     "shortcuts": [
         [
