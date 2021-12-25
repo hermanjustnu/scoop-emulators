@@ -1,11 +1,11 @@
 {
     "homepage": "https://cemu.info/",
-    "version": "1.26.0b",
+    "version": "1.26.0c",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://cemu.info/releases/cemu_1.26.0.zip",
-            "hash": "9554a8606a06285f0c308ba3b1abc4940dfbe8975fc6647e19bcb0ef9b7a3f34"
+            "hash": "1783557ca60ae6b84cb114669ffb4f9b4db0ed1babc66bf1bacb15f2ce674fd6"
         }
     },
     "extract_dir": "cemu_1.26.0",
