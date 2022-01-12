@@ -1,12 +1,12 @@
 {
     "homepage": "https://desmume.org",
-    "version": "0.9.12-910-af06cc4a",
+    "version": "0.9.12-911-747f3694",
     "license": "GPL-2.0-only",
     "description": "DeSmuME is a Nintendo DS emulator",
     "architecture": {
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/gi0sp4lvwcmhekcu/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2019-x64-Release.exe#/DeSmuMe.exe",
-            "hash": "ba184e0c74731af636cafc73523f47fa4b2a6518190171b4064eae488f47054c"
+            "url": "https://ci.appveyor.com/api/buildjobs/o2v7bl8dlju6ksj1/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2019-x64-Release.exe#/DeSmuMe.exe",
+            "hash": "68f361109da37bb6fe6a692900394a2a362ea6dbcd62f7eeb94dbee3e224534e"
         }
     },
     "shortcuts": [
