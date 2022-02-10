@@ -18,10 +18,10 @@
         "    New-Item \"$dir\\retroarch.cfg\" -Type File | Out-Null",
         "}"
     ],
-    "bin": "retroarch.exe",
+    "bin": "RetroArch-Win64/retroarch.exe",
     "shortcuts": [
         [
-            "retroarch.exe",
+            "RetroArch-Win64/retroarch.exe",
             "RetroArch"
         ]
     ],
