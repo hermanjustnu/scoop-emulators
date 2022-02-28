@@ -1,6 +1,6 @@
 {
     "homepage": "http://www.snes9x.com/",
-    "version": "1.58",
+    "version": "1.60",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/snes9xgit/snes9x/raw/master/LICENSE"
@@ -8,8 +8,8 @@
     "description": "Snes9x is a portable, freeware Super Nintendo Entertainment System (SNES) emulator.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/snes9xgit/snes9x/releases/download/1.58/snes9x-1.58-win32-x64.zip",
-            "hash": "1bc2fc33eb586ab678f27b900d65e8602056f447cd342cce217250303e199582",
+            "url": "https://github.com/snes9xgit/snes9x/releases/download/1.60/snes9x-1.60-win32-x64.zip",
+            "hash": "d5914d166e6d9987429566b8ad70f42d8c851c87ababace738918966852a58a3",
             "shortcuts": [
                 [
                     "snes9x-x64.exe",
@@ -18,8 +18,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/snes9xgit/snes9x/releases/download/1.58/snes9x-1.58-win32.zip",
-            "hash": "307aca6e1ea16967d45850d0c3f43f90400090e628fbcfc36b936e7f971fc4a0",
+            "url": "https://github.com/snes9xgit/snes9x/releases/download/1.60/snes9x-1.60-win32.zip",
+            "hash": "c373522f4e9872626fbc29fa9e83d06122530e53e2328d39811394ca391ef728",
             "shortcuts": [
                 [
                     "snes9x.exe",
