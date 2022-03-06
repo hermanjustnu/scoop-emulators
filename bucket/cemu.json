@@ -1,20 +1,12 @@
 {
-    "homepage": "https://cemu.info/",
     "version": "1.26.2f",
+    "homepage": "https://cemu.info/",
     "license": "Freeware",
-    "architecture": {
-        "64bit": {
-            "url": "https://cemu.info/releases/cemu_1.26.2.zip",
-            "hash": "b0e3abf5048f78e352b42c3e1660a2c6e85d6905cd9f60d06ca2f2318fa3152c"
-        }
+    "suggest": {
+        "cemuhook": "cemuhook",
+        "vcredist": "extras/vcredist2015"
     },
     "extract_dir": "cemu_1.26.2",
-    "shortcuts": [
-        [
-            "cemu.exe",
-            "Cemu"
-        ]
-    ],
     "installer": {
         "script": [
             "if (!(Test-Path \"$persist_dir\\settings.xml\")) {",
@@ -22,6 +14,12 @@
             "}"
         ]
     },
+    "shortcuts": [
+        [
+            "cemu.exe",
+            "Cemu"
+        ]
+    ],
     "persist": [
         "settings.xml",
         "controllerProfiles",
@@ -30,19 +28,21 @@
         "mlc01",
         "shaderCache"
     ],
-    "suggest": {
-        "vcredist": "extras/vcredist2015",
-        "cemuhook": "cemuhook"
-    },
     "checkver": {
         "regex": "Download latest version \\(v((?<version>[\\d.]+)[\\w]*?),"
     },
     "autoupdate": {
+        "extract_dir": "cemu_$matchVersion",
         "architecture": {
             "64bit": {
                 "url": "https://cemu.info/releases/cemu_$matchVersion.zip"
             }
-        },
-        "extract_dir": "cemu_$matchVersion"
+        }
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://cemu.info/releases/cemu_1.26.2.zip",
+            "hash": "b0e3abf5048f78e352b42c3e1660a2c6e85d6905cd9f60d06ca2f2318fa3152c"
+        }
     }
 }

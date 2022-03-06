@@ -1,24 +1,14 @@
 {
-    "homepage": "https://www.retroarch.com/",
     "version": "1.10.1",
-    "license": "GPL-3.0-only",
     "description": "Frontend for emulators, game engines and media players.",
-    "architecture": {
-        "64bit": {
-            "url": "https://buildbot.libretro.com/stable/1.10.1/windows/x86_64/RetroArch.7z",
-            "hash": "197c6b77220a1d14cb2ef27b401954b7010d5ceccb1eec2a140e5826c181e014"
-        },
-        "32bit": {
-            "url": "https://buildbot.libretro.com/stable/1.10.1/windows/x86/RetroArch.7z",
-            "hash": "971620fc1252369564e80e3d633ed9e5d984ead9407e7360efc7e642b97f6c4b"
-        }
-    },
+    "homepage": "https://www.retroarch.com/",
+    "license": "GPL-3.0-only",
+    "extract_dir": "RetroArch-Win64",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\retroarch.cfg\")) {",
         "    New-Item \"$dir\\retroarch.cfg\" -Type File | Out-Null",
         "}"
     ],
-    "extract_dir": "RetroArch-Win64",
     "bin": "retroarch.exe",
     "shortcuts": [
         [
@@ -47,12 +37,22 @@
     },
     "autoupdate": {
         "architecture": {
-            "64bit": {
-                "url": "https://buildbot.libretro.com/stable/$version/windows/x86_64/RetroArch.7z"
-            },
             "32bit": {
                 "url": "https://buildbot.libretro.com/stable/$version/windows/x86/RetroArch.7z"
+            },
+            "64bit": {
+                "url": "https://buildbot.libretro.com/stable/$version/windows/x86_64/RetroArch.7z"
             }
+        }
+    },
+    "architecture": {
+        "32bit": {
+            "url": "https://buildbot.libretro.com/stable/1.10.1/windows/x86/RetroArch.7z",
+            "hash": "971620fc1252369564e80e3d633ed9e5d984ead9407e7360efc7e642b97f6c4b"
+        },
+        "64bit": {
+            "url": "https://buildbot.libretro.com/stable/1.10.1/windows/x86_64/RetroArch.7z",
+            "hash": "197c6b77220a1d14cb2ef27b401954b7010d5ceccb1eec2a140e5826c181e014"
         }
     }
 }

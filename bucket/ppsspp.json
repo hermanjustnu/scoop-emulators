@@ -1,22 +1,21 @@
 {
-    "homepage": "https://www.ppsspp.org/",
     "version": "1.12.3",
+    "description": "PPSSPP is a Playstation emulator that can run your PSP games in full HD resolution",
+    "homepage": "https://www.ppsspp.org/",
     "license": {
-        "identifier": "GPL-2.0-or-later",
-        "url": "https://github.com/hrydgard/ppsspp/raw/master/LICENSE.TXT"
+        "url": "https://github.com/hrydgard/ppsspp/raw/master/LICENSE.TXT",
+        "identifier": "GPL-2.0-or-later"
     },
     "url": "https://www.ppsspp.org/files/1_12_3/ppsspp_win.zip",
     "hash": "f909ae76b63984cd88f8c3e8ff56fd6e6bd7de98dd1ee441b5290ddce3fe7d94",
-    "description": "PPSSPP is a Playstation emulator that can run your PSP games in full HD resolution",
+    "checkver": {
+        "url": "https://www.ppsspp.org/downloads.html",
+        "regex": "(?sm)href=\"(?<url>files/(?:[\\d_]+)/ppsspp_win.zip)\".*?Download ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.ppsspp.org/$matchUrl"
+    },
     "architecture": {
-        "64bit": {
-            "shortcuts": [
-                [
-                    "PPSSPPWindows64.exe",
-                    "PPSSPP"
-                ]
-            ]
-        },
         "32bit": {
             "shortcuts": [
                 [
@@ -24,13 +23,14 @@
                     "PPSSPP"
                 ]
             ]
+        },
+        "64bit": {
+            "shortcuts": [
+                [
+                    "PPSSPPWindows64.exe",
+                    "PPSSPP"
+                ]
+            ]
         }
-    },
-    "checkver": {
-        "url": "https://www.ppsspp.org/downloads.html",
-        "regex": "(?sm)href=\"(?<url>files/(?:[\\d_]+)/ppsspp_win.zip)\".*?Download ([\\d.]+)"
-    },
-    "autoupdate": {
-        "url": "https://www.ppsspp.org/$matchUrl"
     }
 }

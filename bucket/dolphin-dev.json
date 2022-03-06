@@ -1,13 +1,9 @@
 {
-    "homepage": "https://dolphin-emu.org/",
     "version": "5.0-16101",
+    "homepage": "https://dolphin-emu.org/",
     "license": "GPL-2.0-only",
-    "architecture": {
-        "64bit": {
-            "url": "https://dl.dolphin-emu.org/builds/c0/39/dolphin-master-5.0-16101-x64.7z",
-            "hash": "03294446b652791b7a368d2796d995452a36a464369ee0dd62cc82cf7b07b86c",
-            "extract_dir": "Dolphin-x64"
-        }
+    "suggest": {
+        "vcredist": "extras/vcredist2015"
     },
     "shortcuts": [
         [
@@ -15,9 +11,6 @@
             "Dolphin (Dev)"
         ]
     ],
-    "suggest": {
-        "vcredist": "extras/vcredist2015"
-    },
     "checkver": {
         "url": "https://dolphin-emu.org/download/",
         "regex": "https://dl.dolphin-emu.org/builds/(?<path>.*?)/dolphin-master-([\\d.]+-[\\d]+)-x64.7z"
@@ -27,6 +20,13 @@
             "64bit": {
                 "url": "https://dl.dolphin-emu.org/builds/$matchPath/dolphin-master-$version-x64.7z"
             }
+        }
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://dl.dolphin-emu.org/builds/c0/39/dolphin-master-5.0-16101-x64.7z",
+            "hash": "03294446b652791b7a368d2796d995452a36a464369ee0dd62cc82cf7b07b86c",
+            "extract_dir": "Dolphin-x64"
         }
     }
 }
