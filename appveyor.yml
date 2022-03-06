@@ -18,11 +18,11 @@ environment:
 cache:
   - '%USERPROFILE%\Documents\WindowsPowerShell\Modules -> appveyor.yml'
   - C:\projects\helpers  -> appveyor.yml, test\bin\*.ps1
-init:
-  - ps: (Get-PSProvider 'FileSystem').Home = 'C:\projects\'
-  - ps: if(!(Test-Path "$env:SCOOP")) { git clone -q --depth=1 "https://github.com/lukesampson/scoop" "$env:SCOOP" }
 matrix:
   fast_finish: true
+init:
+  - ps: (Get-PSProvider 'FileSystem').Home = 'C:\projects\'
+  - ps: if(!(Test-Path "$env:SCOOP")) { git clone -q --depth=1 "https://github.com/ScoopInstaller/scoop" "$env:SCOOP" }
 for:
   - matrix:
       only:

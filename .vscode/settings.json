@@ -1,7 +1,7 @@
 {
     "json.schemas": [
         {
-            "url": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
+            "url": "https://raw.githubusercontent.com/scoopinstaller/scoop/master/schema.json",
             "fileMatch": [
                 "bucket/*.json"
             ]
@@ -10,5 +10,91 @@
     "files.exclude": {
         "**/.git": true,
         "**/.DS_Store": true
-    }
+    },
+    "cSpell.words": [
+        "appdata",
+        "autoupdate",
+        "basever",
+        "beyondmeat",
+        "Calinou",
+        "checkurls",
+        "checkver",
+        "citra",
+        "createconfig",
+        "ctrlr",
+        "Famicom",
+        "hermanjustnu",
+        "HOMEDRIVE",
+        "HOMEPATH",
+        "lukesampson",
+        "MAME",
+        "memstick",
+        "mesen",
+        "mklink",
+        "msvc",
+        "ppsspp",
+        "Retroarch",
+        "RPCS",
+        "useb",
+        "yuzu"
+    ],
+    "sortJSON.orderOverride": [
+        "version",
+        "description",
+        "homepage",
+        "license",
+        "notes",
+        "depends",
+        "suggest",
+        "url",
+        "hash",
+        "extract_dir",
+        "extract_to",
+        "pre_install",
+        "installer",
+        "post_install",
+        "env_add_path",
+        "env_set",
+        "bin",
+        "shortcuts",
+        "persist",
+        "uninstaller",
+        "checkver",
+        "autoupdate"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.sortJSON": true
+    },
+    "sort-json.settings.orderOverride": [
+        "version",
+        "description",
+        "homepage",
+        "license",
+        "notes",
+        "depends",
+        "suggest",
+        "url",
+        "hash",
+        "extract_dir",
+        "extract_to",
+        "pre_install",
+        "installer",
+        "post_install",
+        "env_add_path",
+        "env_set",
+        "bin",
+        "shortcuts",
+        "persist",
+        "uninstaller",
+        "checkver",
+        "autoupdate"
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.defaultFormatter": "richie5um2.vscode-sort-json",
+    "editor.formatOnSave": true,
+    "prettier.enable": false,
+    "html.format.enable": false
 }
