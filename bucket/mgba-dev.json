@@ -6,25 +6,24 @@
         "url": "https://github.com/mgba-emu/mgba/blob/master/LICENSE",
         "identifier": "MPL-2.0"
     },
-    "installer": {
-        "script": [
-            "Move-Item -Path \"$(Get-ChildItem -Path $dir)\\*\" -Destination \"$dir\"",
-            "Set-Location -Path $dir",
-            "Remove-Item -Path $(Get-ChildItem -Path $dir -Name -Include mGBA-build*)",
-            "if (!(Test-Path \"$persist_dir\\qt.ini\")) {",
-            "   New-Item \"$dir\\qt.ini\" -ItemType \"file\" | Out-Null ",
-            "}",
-            "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
-            "   Set-Content \"$dir\\config.ini\" '[ports.qt]'",
-            "   'cheats', 'patch', 'savegame', 'savestate', 'screenshot' | ForEach-Object {",
-            "       Add-Content -Path \"$dir\\config.ini\" -Value $_`Path`=$persist_dir\\$_ }",
-            "}"
-        ]
-    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\qt.ini\")) {",
+        "   New-Item \"$dir\\qt.ini\" -ItemType \"file\" | Out-Null ",
+        "}",
+        "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
+        "   Set-Content \"$dir\\config.ini\" '[ports.qt]'",
+        "   'cheats', 'patch', 'savegame', 'savestate', 'screenshot' | ForEach-Object {",
+        "       Add-Content -Path \"$dir\\config.ini\" -Value $_`Path`=$persist_dir\\$_ }",
+        "}"
+    ],
     "bin": [
         [
             "mGBA.exe",
-            "mgba-sdl.exe"
+            "mgba-dev"
+        ],
+        [
+            "mgba-sdl.exe",
+            "mgba-sdl-dev"
         ]
     ],
     "shortcuts": [
