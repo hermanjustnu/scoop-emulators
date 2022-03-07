@@ -6,6 +6,12 @@
         "url": "https://github.com/pineappleEA/pineapple-src/blob/main/LICENSE",
         "identifier": "GPL-2.0"
     },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-2529/Windows-Yuzu-EA-2529.7z",
+            "hash": "8cccc74ea196ff39f128ee01cf9a551fafba4d67ca8cc34e1f2a50df96f4adb8"
+        }
+    },
     "extract_dir": "yuzu-windows-msvc-early-access",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
@@ -47,12 +53,6 @@
             "64bit": {
                 "url": "https://github.com/pineappleEA/pineapple-src/releases/download/$version/Windows-Yuzu-$version.7z"
             }
-        }
-    },
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-2529/Windows-Yuzu-EA-2529.7z",
-            "hash": "8cccc74ea196ff39f128ee01cf9a551fafba4d67ca8cc34e1f2a50df96f4adb8"
         }
     }
 }
