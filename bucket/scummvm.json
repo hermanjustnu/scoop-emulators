@@ -6,6 +6,7 @@
         "url": "https://github.com/scummvm/scummvm/blob/master/COPYING",
         "identifier": "GPL-3.0"
     },
+    "bin": "scummvm.exe",
     "shortcuts": [
         [
             "scummvm.exe",
