@@ -1,13 +1,36 @@
 {
     "version": "0-943",
+    "description": "Nintendo Switch emulator",
     "homepage": "https://yuzu-emu.org/",
-    "license": "GPL-2.0-only",
+    "license": {
+        "url": "https://github.com/yuzu-emu/yuzu-mainline/blob/master/license.txt",
+        "identifier": "GPL-2.0"
+    },
     "extract_dir": "yuzu-windows-msvc",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
+        "   New-item \"$persist_dir\\user\" -ItemType Directory | Out-Null",
+        "   if (Test-Path \"$env:APPDATA\\yuzu\") {",
+        "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
+        "       Copy-Item -Path \"$env:APPDATA\\yuzu\\*\" -Destination \"$persist_dir\\user\" -Recurse",
+        "       Remove-Item -Path \"$env:APPDATA\\yuzu\" -Recurse",
+        "   }",
+        "}"
+    ],
+    "bin": [
+        "yuzu.exe",
+        "yuzu-cmd.exe"
+    ],
     "shortcuts": [
         [
             "yuzu.exe",
             "Yuzu"
         ]
+    ],
+    "persist": [
+        "user",
+        "plugins"
     ],
     "checkver": {
         "github": "https://github.com/yuzu-emu/yuzu-mainline",

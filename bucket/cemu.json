@@ -1,7 +1,11 @@
 {
     "version": "1.26.2f",
+    "description": "Nintendo Wii U emulator",
     "homepage": "https://cemu.info/",
-    "license": "Freeware",
+    "license": {
+        "url": "https://cemu.info",
+        "identifier": "Freeware"
+    },
     "suggest": {
         "cemuhook": "cemuhook",
         "vcredist": "extras/vcredist2015"
@@ -9,11 +13,17 @@
     "extract_dir": "cemu_1.26.2",
     "installer": {
         "script": [
+            "'cemuhook.dll', 'keystone.dll' | ForEach-Object {",
+            "   if (Test-Path \"$(versiondir 'cemuhook' 'current' $global)\\$_\") {",
+            "       Copy-Item \"$(versiondir 'cemuhook' 'current' $global)\\$_\" \"$dir\"",
+            "   }",
+            "}",
             "if (!(Test-Path \"$persist_dir\\settings.xml\")) {",
             "    New-Item \"$dir\\settings.xml\" -Type File | Out-Null",
             "}"
         ]
     },
+    "bin": "Cemu.exe",
     "shortcuts": [
         [
             "cemu.exe",
@@ -26,7 +36,8 @@
         "gameProfiles",
         "graphicPacks",
         "mlc01",
-        "shaderCache"
+        "sharedFonts",
+        "shaderCache\\transferable"
     ],
     "checkver": {
         "regex": "Download latest version \\(v((?<version>[\\d.]+)[\\w]*?),"

@@ -1,5 +1,6 @@
 {
     "version": "0.9.3",
+    "description": "Nintendo Game Boy Advance emulator",
     "homepage": "https://mgba.io",
     "license": "MPL-2.0",
     "pre_install": [

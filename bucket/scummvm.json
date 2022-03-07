@@ -1,15 +1,25 @@
 {
     "version": "2.5.1",
+    "description": "ScummVM is a program which allows you to run certain classic graphical adventure and role-playing games",
     "homepage": "https://www.scummvm.org/",
-    "license": "GPL-2.0-or-later",
+    "license": {
+        "url": "https://github.com/scummvm/scummvm/blob/master/COPYING",
+        "identifier": "GPL-3.0"
+    },
     "shortcuts": [
         [
             "scummvm.exe",
             "ScummVM"
         ]
     ],
+    "persist": [
+        "scummvm.ini",
+        "saves",
+        "themes",
+        "extras"
+    ],
     "checkver": {
-        "github": "https://github.com/scummvm/scummvm/"
+        "github": "https://github.com/scummvm/scummvm"
     },
     "autoupdate": {
         "hash": {
