@@ -12,7 +12,7 @@
             "hash": "0e6979f48bd735fbc07f237f15d3cdcbd56278e5927d291345741eaaca02214b"
         }
     },
-    "extract_dir": "canary-mingw",
+    "extract_dir": "nightly-mingw",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\user\")) {",
         "   New-Item -Path \"$persist_dir\" -Name \"user\" -ItemType \"directory\" | Out-Null",
@@ -45,6 +45,6 @@
                 "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-$version/citra-windows-$matchEnv-$matchCommit.$matchZip"
             }
         },
-        "extract_dir": "canary-$matchEnv"
+        "extract_dir": "nightly-$matchEnv"
     }
 }
