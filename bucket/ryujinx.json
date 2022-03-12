@@ -1,5 +1,5 @@
 {
-    "version": "1.1.67",
+    "version": "1.1.68",
     "description": "Nintendo Switch emulator",
     "homepage": "https://ryujinx.org/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.67/ryujinx-1.1.67-win_x64.zip",
-            "hash": "dcb1994b80bfa76fff351219d273c9abd68b9764f0af15e7ea49c0b1d3b5c4e5"
+            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.68/ryujinx-1.1.68-win_x64.zip",
+            "hash": "92a26d086ac17910f3ad4fd0ae93386c114951ede9399b99fda6cb773f32c626"
         }
     },
     "extract_dir": "publish",
