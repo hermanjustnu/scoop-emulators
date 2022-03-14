@@ -1,5 +1,5 @@
 {
-    "version": "1.7.2452",
+    "version": "1.7.2453",
     "description": "Sony PlayStation 2 emulator",
     "homepage": "https://pcsx2.net/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "32bit": {
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.2452/pcsx2-v1.7.2452-windows-32bit-AVX2.7z",
-            "hash": "76d61b01f114ccc97b7983151bb4cdf1f3a0aec8efee5b96279ba66e5f2fbb27",
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.2453/pcsx2-v1.7.2453-windows-32bit-AVX2.7z",
+            "hash": "5daa5cb9a5024ae5029f82556be1c01d7cf7257f01bdceb9b14d274d8e24a0fc",
             "bin": [
                 [
                     "pcsx2-avx2.exe",
@@ -24,8 +24,8 @@
             ]
         },
         "64bit": {
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.2452/pcsx2-v1.7.2452-windows-64bit-AVX2.7z",
-            "hash": "34224800dbffc16e44a4838facd6ea2ffbfdb18b58eff06b99abc0cd0063d54e",
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.2453/pcsx2-v1.7.2453-windows-64bit-AVX2.7z",
+            "hash": "2bf15e92fa99813f62a2d6a7e7489b5d0be29252042bf7a033c745f1942835c6",
             "bin": [
                 [
                     "pcsx2x64-avx2.exe",
