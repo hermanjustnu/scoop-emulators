@@ -1,5 +1,5 @@
 {
-    "version": "7528-20220607",
+    "version": "7529-20220607",
     "description": "Nintendo Game Boy Advance emulator",
     "homepage": "https://mgba.io/",
     "license": {
@@ -8,14 +8,14 @@
     },
     "architecture": {
         "32bit": {
-            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2022-06-07-win32-7528-70a34a58f03b44e5a129cc04b1b51082508f41da.7z",
-            "hash": "dfd16c3b4436213d0636a254702c78579d375e1d380a23e54823fb12c48949e8",
-            "extract_dir": "mGBA-build-2022-06-07-win32-7528-70a34a58f03b44e5a129cc04b1b51082508f41da"
+            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2022-06-07-win32-7529-542824e3c077f35f1c559b88d962071182790482.7z",
+            "hash": "995cdec23b1fda54e40d0b4fd0013038c7e5aca60fd285f981b7ee07e2aa2549",
+            "extract_dir": "mGBA-build-2022-06-07-win32-7529-542824e3c077f35f1c559b88d962071182790482"
         },
         "64bit": {
-            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2022-06-07-win64-7528-70a34a58f03b44e5a129cc04b1b51082508f41da.7z",
-            "hash": "d0405e17710f0b63690e2960f03d5dfac9f3fbab37fe2e2daef3b52859c015b5",
-            "extract_dir": "mGBA-build-2022-06-07-win64-7528-70a34a58f03b44e5a129cc04b1b51082508f41da"
+            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2022-06-07-win64-7529-542824e3c077f35f1c559b88d962071182790482.7z",
+            "hash": "888c31c61ff2ac47725670210b7442b8fe678c2560b94d9fec0443ae0426f5bb",
+            "extract_dir": "mGBA-build-2022-06-07-win64-7529-542824e3c077f35f1c559b88d962071182790482"
         }
     },
     "pre_install": [
