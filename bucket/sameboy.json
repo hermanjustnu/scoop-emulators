@@ -1,5 +1,5 @@
 {
-    "version": "0.14.7",
+    "version": "0.14.6",
     "description": "Nintendo Game Boy and Game Boy Color emulator",
     "homepage": "https://sameboy.github.io/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/LIJI32/SameBoy/releases/download/v0.14.7/sameboy_winsdl_v0.14.7.zip",
-            "hash": "d49159fd1ea612bc7e8008028e599b5b01821a080628b548b21b0d276577f349",
+            "url": "https://github.com/LIJI32/SameBoy/releases/download/v0.14.6/sameboy_winsdl_v0.14.6.zip",
+            "hash": "f28cae55cf9f60f04d7fe72c67bfffa5adde11ba780af4a9dfa1decfc9e29f54",
             "bin": [
                 [
                     "sameboy.exe",
