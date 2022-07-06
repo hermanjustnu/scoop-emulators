@@ -1,5 +1,5 @@
 {
-    "version": "1.0.2735",
+    "version": "1.0.2736",
     "description": "Microsoft Xbox 360 emulator",
     "homepage": "https://xenia.jp",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xenia-project/release-builds-windows/releases/download/v1.0.2735-master/xenia_master.zip",
-            "hash": "0fd187c12b0981993c75bc0bf7a39a3e5b5494d61e49d3e9ce118909bed65760"
+            "url": "https://github.com/xenia-project/release-builds-windows/releases/download/v1.0.2736-master/xenia_master.zip",
+            "hash": "62c0402724350e01ecd56103f69ce80194a8ccb6e35144f62d8c4cd5c9b3bdb7"
         }
     },
     "pre_install": [
