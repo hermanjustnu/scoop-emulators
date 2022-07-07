@@ -43,6 +43,7 @@
         ]
     ],
     "persist": [
+        "bios",
         "cheats",
         "patch",
         "savegame",
