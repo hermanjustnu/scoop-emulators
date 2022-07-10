@@ -8,7 +8,6 @@
     },
     "url": "https://ppsspp.org/files/1_12_3/ppsspp_win.zip",
     "hash": "c29b1faf56df9c9926cfb77f874484571fbe8e59689b1a39091425ab309e6463",
-    "extract_dir": "ppsspp",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
