@@ -43,9 +43,12 @@
         "recordings",
         "saves",
         "screenshots",
+        "shaders\\presets",
         "states",
         "system",
         "thumbnails",
+        "content_favorites.lpl",
+        "content_history.lpl",
         "retroarch.cfg"
     ],
     "autoupdate": {
