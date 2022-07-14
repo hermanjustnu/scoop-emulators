@@ -1,5 +1,5 @@
 {
-    "version": "0.5.7.1067",
+    "version": "0.5.8.1189",
     "description": "WinFellow is an Amiga emulator",
     "homepage": "http://petschau.github.io/WinFellow",
     "license": "GPL-2.0-only",
@@ -21,8 +21,8 @@
             ]
         }
     },
-    "url": "https://github.com/petschau/WinFellow/releases/download/v0.5.7.1067/WinFellow_v0.5.7.1067-master-271648e.zip",
-    "hash": "a0d95fa3e2b9c6f6cc6e38b5ae802e992d101b10f0ed8833f9409f205c434786",
+    "url": "https://github.com/petschau/WinFellow/releases/download/v0.5.8.1189/WinFellow_v0.5.8.1189-master-551edc5.zip",
+    "hash": "06935368b1e93392ab847b9c8873aac94be96d89df32ef9be001f8d4d4b17746",
     "checkver": {
         "url": "https://github.com/petschau/WinFellow/releases/latest",
         "regex": "/v([\\d.]+)/WinFellow_v(?:[\\d.]+)-master-(?<commit>[\\da-z]{7}).zip"
