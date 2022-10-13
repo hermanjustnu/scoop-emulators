@@ -1,5 +1,5 @@
 {
-    "version": "1785",
+    "version": "1794",
     "description": "Nintendo 3DS emulator",
     "homepage": "https://citra-emu.org/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1785/citra-windows-mingw-20220910-baecc18.7z",
-            "hash": "514b33b62c40c7bb8f7ad5ddfd8974b3a78c9ff32e2f9abeb3628810e54fa15e"
+            "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1794/citra-windows-mingw-20221010-e24e2a8.7z",
+            "hash": "a3eef256e742ca37cdab41de11b9d42286712701da9607c036c9e49367dbddbb"
         }
     },
     "extract_dir": "nightly-mingw",
