@@ -8,7 +8,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64.zip",
+            "url": "https://nightly.link/TASEmulators/desmume/actions/runs/3064179185/desmume-win-x64.zip",
             "hash": "23fbabcee562aae5cacc21725f60065a110dd6759d00338f80888dd351623f36",
             "bin": [
                 [
@@ -43,20 +43,13 @@
         "desmume.ini"
     ],
     "checkver": {
-        "url": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64.zip",
-        "script": [
-            "$Global:ProgressPreference = 'SilentlyContinue'",
-            "$loc = (Invoke-WebRequest $url -MaximumRedirection 0 -ErrorAction Ignore).Headers.Location",
-            "$Global:ProgressPreference = 'Continue'",
-            "Write-Output $loc"
-        ],
-        "regex": "(?smi)pipelines/[\\d]+/runs/(?<run>[\\d]+)/",
-        "replace": "${run}"
+        "url": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64",
+        "regex": "(?smi)runs/(?<run>\\d+)/desmume-win-x64\\.zip.*pipelines/[\\d]+/runs/([\\d]+)/"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64.zip"
+                "url": "https://nightly.link/TASEmulators/desmume/actions/runs/$matchRun/desmume-win-x64.zip"
             }
         }
     }
