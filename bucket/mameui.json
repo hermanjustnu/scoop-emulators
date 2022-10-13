@@ -17,13 +17,13 @@
         }
     },
     "checkver": {
-        "regex": "MAMEUI v\\.([\\d]+) Download",
+        "regex": "MAMEUI \\.(?<minor>[\\d]+)",
         "replace": "0.${1}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.mameui.info/MAMEUI.7z"
+                "url": "http://www.mameui.info/MAMEUI$matchMinor.7z"
             }
         }
     }
