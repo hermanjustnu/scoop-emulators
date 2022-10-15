@@ -1,5 +1,5 @@
 {
-    "version": "acee74a4",
+    "version": "nightly",
     "description": "ScummVM is a program which allows you to run certain classic graphical adventure and role-playing games",
     "homepage": "https://www.scummvm.org/",
     "license": {
@@ -8,15 +8,18 @@
     },
     "architecture": {
         "32bit": {
-            "url": "https://buildbot.scummvm.org/dailybuilds/master/windows-x86-master-acee74a4.zip",
-            "hash": "d77f5acdd93eb91b7e45727e0734b6624fa2f5edf7333b3978688077cc6be488",
-            "extract_dir": "windows-x86-master-acee74a4"
+            "url": "https://buildbot.scummvm.org/dailybuilds/master/windows-x86-master-latest.zip"
         },
         "64bit": {
-            "url": "https://buildbot.scummvm.org/dailybuilds/master/windows-x86-64-master-acee74a4.zip",
-            "hash": "dc5c9098e7a61e03560c1b3b0a5655af53e51f46e4a3de782f19fbe079036a1f",
-            "extract_dir": "windows-x86-64-master-acee74a4"
+            "url": "https://buildbot.scummvm.org/dailybuilds/master/windows-x86-64-master-latest.zip"
         }
+    },
+    "extract_to": "tmp",
+    "installer": {
+        "script": [
+            "(Get-ChildItem -Directory \"$dir\\tmp\").FullName | % { Move-Item \"$_\\*\" \"$dir\" }",
+            "Remove-Item -Recurse \"$dir\\tmp\""
+        ]
     },
     "bin": "win32dist-mingw/scummvm.exe",
     "shortcuts": [
@@ -30,24 +33,6 @@
         "saves",
         "themes",
         "extras"
-    ],
-    "checkver": {
-        "url": "https://buildbot.scummvm.org/dailybuilds/master/?C=M;O=D",
-        "regex": "windows-x86-64-master-([a-f0-9]{8}).zip"
-    },
-    "autoupdate": {
-        "architecture": {
-            "32bit": {
-                "url": "https://buildbot.scummvm.org/dailybuilds/master/windows-x86-master-$version.zip",
-                "extract_dir": "windows-x86-master-$version"
-            },
-            "64bit": {
-                "url": "https://buildbot.scummvm.org/dailybuilds/master/windows-x86-64-master-$version.zip",
-                "extract_dir": "windows-x86-64-master-$version"
-            }
-        },
-        "hash": {
-            "url": "$url.sha256"
-        }
-    }
+    ]
 }
+
