@@ -6,7 +6,11 @@
         "url": "https://github.com/bsnes-emu/bsnes/blob/master/LICENSE.txt",
         "identifier": "GPL-2.0"
     },
-    "url": "https://github.com/bsnes-emu/bsnes/releases/download/nightly/bsnes-windows.zip",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/bsnes-emu/bsnes/releases/download/nightly/bsnes-windows.zip"
+        }
+    },
     "extract_dir": "bsnes-nightly",
     "bin": "bsnes.exe",
     "shortcuts": [
