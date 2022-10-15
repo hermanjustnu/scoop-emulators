@@ -1,5 +1,5 @@
 {
-    "version": "d516c5f",
+    "version": "nightly",
     "description": "Sony PlayStation Vita emulator",
     "homepage": "https://vita3k.org",
     "license": {
@@ -8,8 +8,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/windows-latest.zip",
-            "hash": "d84c6185a040a81aa32001e23a0c9b8e155d7f95ec74c957632e3864100a2d4c"
+            "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/windows-latest.zip"
         }
     },
     "pre_install": [
@@ -30,16 +29,5 @@
         "lang",
         "shaders-builtin",
         "config.yml"
-    ],
-    "checkver": {
-        "github": "https://github.com/Vita3K/Vita3K",
-        "regex": "commit[/:]\\s?([a-f0-9]{7})"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/windows-latest.zip"
-            }
-        }
-    }
+    ]
 }
