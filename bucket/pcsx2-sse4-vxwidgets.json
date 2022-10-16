@@ -51,12 +51,12 @@
     ],
     "checkver": {
         "url": "https://github.com/PCSX2/pcsx2/releases.atom",
-        "regex": "v([\\d.]+)",
         "script": [
             "$xml = [xml]$page",
             "$title = ($xml.feed.entry | Sort-Object -Descending { $_.updated })[0].title",
             "Write-Output \"$title\""
-        ]
+        ],
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

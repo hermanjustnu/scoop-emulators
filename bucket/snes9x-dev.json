@@ -46,8 +46,6 @@
     ],
     "checkver": {
         "url": "https://ci.appveyor.com/api/projects/snes9x/snes9x",
-        "regex": "(?<version>[\\d.-]+) (?<job32>[\\w]{16}) (?<job64>[\\w]{16}) (?<build>[\\d]+) (?<commit>[a-f0-9]{7})",
-        "replace": "${version}-${commit}",
         "script": [
             "$version = json_path $page $.build.version",
             "$job32 = json_path $page $.build.jobs[0].jobId",
@@ -55,7 +53,9 @@
             "$build = json_path $page $.build.buildNumber",
             "$commit = json_path $page $.build.commitId",
             "Write-Output \"$version $job32 $job64 $build $commit\""
-        ]
+        ],
+        "regex": "(?<version>[\\d.-]+) (?<job32>[\\w]{16}) (?<job64>[\\w]{16}) (?<build>[\\d]+) (?<commit>[a-f0-9]{7})",
+        "replace": "${version}-${commit}"
     },
     "autoupdate": {
         "architecture": {
