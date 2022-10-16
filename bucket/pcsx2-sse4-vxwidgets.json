@@ -6,6 +6,9 @@
         "url": "https://github.com/PCSX2/pcsx2/blob/master/COPYING.GPLv3",
         "identifier": "GPL-3.0"
     },
+    "suggest": {
+        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.3429/pcsx2-v1.7.3429-windows-64bit-SSE4-wxWidgets.7z",
@@ -34,9 +37,6 @@
         "   }",
         "}"
     ],
-    "suggest": {
-        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
-    },
     "persist": [
         "bios",
         "cheats_ws",
@@ -51,12 +51,12 @@
     ],
     "checkver": {
         "url": "https://github.com/PCSX2/pcsx2/releases.atom",
+        "regex": "v([\\d.]+)",
         "script": [
             "$xml = [xml]$page",
             "$title = ($xml.feed.entry | Sort-Object -Descending { $_.updated })[0].title",
             "Write-Output \"$title\""
-        ],
-        "regex": "v([\\d.]+)"
+        ]
     },
     "autoupdate": {
         "architecture": {

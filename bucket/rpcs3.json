@@ -6,6 +6,10 @@
         "url": "https://github.com/RPCS3/rpcs3/blob/master/LICENSE",
         "identifier": "GPL-2.0"
     },
+    "depends": "ps3-system-software",
+    "suggest": {
+        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-fafae1cbb524b17e431533236561cef8def9190f/rpcs3-v0.0.24-14273-fafae1cb_win64.7z",
@@ -21,10 +25,6 @@
             "    New-Item \"$dir\\games.yml\" -Type File | Out-Null",
             "}"
         ]
-    },
-    "depends": "ps3-system-software",
-    "suggest": {
-        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
     },
     "bin": "rpcs3.exe",
     "shortcuts": [

@@ -7,15 +7,15 @@
         "identifier": "GPL-3.0"
     },
     "architecture": {
-        "32bit": {
-            "url": "https://buildbot.libretro.com/nightly/windows/x86/2022-10-16_RetroArch.7z",
-            "hash": "cd896c52e3489a78ee8d48b9bb30e436d8a2429323fbfaf6d440dd76a45cf1f5",
-            "extract_dir": "RetroArch-Win32"
-        },
         "64bit": {
             "url": "https://buildbot.libretro.com/nightly/windows/x86_64/2022-10-16_RetroArch.7z",
             "hash": "b9e6e53e170d3b606d7b8bb6fc718ee3f575bb39d23de3680e773197c77186ca",
             "extract_dir": "RetroArch-Win64"
+        },
+        "32bit": {
+            "url": "https://buildbot.libretro.com/nightly/windows/x86/2022-10-16_RetroArch.7z",
+            "hash": "cd896c52e3489a78ee8d48b9bb30e436d8a2429323fbfaf6d440dd76a45cf1f5",
+            "extract_dir": "RetroArch-Win32"
         }
     },
     "pre_install": [
@@ -57,11 +57,11 @@
     },
     "autoupdate": {
         "architecture": {
-            "32bit": {
-                "url": "https://buildbot.libretro.com/nightly/windows/x86/$version_RetroArch.7z"
-            },
             "64bit": {
                 "url": "https://buildbot.libretro.com/nightly/windows/x86_64/$version_RetroArch.7z"
+            },
+            "32bit": {
+                "url": "https://buildbot.libretro.com/nightly/windows/x86/$version_RetroArch.7z"
             }
         }
     },

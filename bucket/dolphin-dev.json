@@ -6,6 +6,9 @@
         "url": "https://github.com/dolphin-emu/dolphin/blob/master/COPYING",
         "identifier": "GPL-2.0-or-later"
     },
+    "suggest": {
+        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
+    },
     "architecture": {
         "64bit": {
             "url": "https://dl.dolphin-emu.org/builds/73/a9/dolphin-master-5.0-17613-x64.7z",
@@ -26,9 +29,6 @@
         "}"
     ],
     "post_install": "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
-    "suggest": {
-        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
-    },
     "bin": [
         [
             "Dolphin.exe",
