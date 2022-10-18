@@ -10,6 +10,10 @@
         "64bit": {
             "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip",
             "hash": "486bab13e3bb6ac19bd9145558afda0486613898d41e559feb8c8963a76229b4"
+        },
+        "arm64": {
+            "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-arm64-release.zip",
+            "hash": "aa93eec970b0645ab9fca50506738045255ebb1e68bc505e283e452029dd7088"
         }
     },
     "installer": {
@@ -60,6 +64,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-arm64-release.zip"
             }
         }
     },
