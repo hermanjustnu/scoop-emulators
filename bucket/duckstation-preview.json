@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip",
-            "hash": "486bab13e3bb6ac19bd9145558afda0486613898d41e559feb8c8963a76229b4",
+            "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip",
+            "hash": "e5e6bcdd17dd73f9daad5b4213e13fa3bb81afd24c444c3d8c00e6904a6f2ff5",
             "bin": [
                 [
                     "duckstation-nogui-x64-ReleaseLTCG.exe",
@@ -25,8 +25,8 @@
             ]
         },
         "arm64": {
-            "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-arm64-release.zip",
-            "hash": "aa93eec970b0645ab9fca50506738045255ebb1e68bc505e283e452029dd7088",
+            "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-arm64-release.zip",
+            "hash": "165c7f2dbe590fd847e701a2aced7c4f8cc2b57eb579a3fa06e3358e71fb13e5",
             "bin": [
                 [
                     "duckstation-nogui-ARM64-ReleaseLTCG.exe",
@@ -76,10 +76,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip"
+                "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip"
             },
             "arm64": {
-                "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-arm64-release.zip"
+                "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-arm64-release.zip"
             }
         }
     },
