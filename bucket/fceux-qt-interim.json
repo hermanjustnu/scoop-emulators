@@ -20,13 +20,13 @@
     "bin": [
         [
             "qfceux.exe",
-            "fceux"
+            "qfceux-interim"
         ]
     ],
     "shortcuts": [
         [
             "qfceux.exe",
-            "FCEUX Qt/SDL (Dev)"
+            "FCEUX Qt/SDL (Interim)"
         ]
     ],
     "persist": [

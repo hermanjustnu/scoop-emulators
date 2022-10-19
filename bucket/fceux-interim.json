@@ -13,13 +13,13 @@
             "bin": [
                 [
                     "fceux64.exe",
-                    "fceux-dev"
+                    "fceux-interim"
                 ]
             ],
             "shortcuts": [
                 [
                     "fceux64.exe",
-                    "FCEUX (dev)"
+                    "FCEUX (Interim)"
                 ]
             ]
         },
@@ -28,13 +28,13 @@
             "bin": [
                 [
                     "fceux.exe",
-                    "fceux-dev"
+                    "fceux-interim"
                 ]
             ],
             "shortcuts": [
                 [
                     "fceux.exe",
-                    "FCEUX (dev)"
+                    "FCEUX (Interim)"
                 ]
             ]
         }
