@@ -10,7 +10,6 @@
         "64bit": {
             "url": "https://ci.appveyor.com/api/buildjobs/scw6304gxx05p4vn/artifacts/fceux-win64.zip",
             "hash": "2a708b88b937a1c78c43b45949313cf3fe84e31dcf5466280a32c40faddabfec",
-            "extract_dir": "bin",
             "bin": [
                 [
                     "fceux64.exe",
