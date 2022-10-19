@@ -19,10 +19,7 @@
         "}"
     ],
     "bin": [
-        [
-            "qfceux.exe",
-            "fceux"
-        ]
+        "qfceux.exe"
     ],
     "shortcuts": [
         [
