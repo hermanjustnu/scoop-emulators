@@ -55,8 +55,7 @@
         "fceux.cfg"
     ],
     "checkver": {
-        "url": "https://sourceforge.net/projects/fceultra/rss?path=/Binaries/",
-        "regex": "Binaries/([\\d.]+)/fceux-[\\d.]+-win[\\d]{2}\\.zip"
+        "sourceforge": "fceultra"
     },
     "autoupdate": {
         "architecture": {
