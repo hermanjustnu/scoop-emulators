@@ -9,7 +9,6 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/TASEmulators/fceux/releases/download/interim-build/fceux-win64.zip",
-            "extract_dir": "bin",
             "bin": [
                 [
                     "fceux64.exe",
