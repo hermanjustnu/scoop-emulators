@@ -1,5 +1,5 @@
 {
-    "version": "1.7.3500",
+    "version": "1.7.3501",
     "description": "Sony PlayStation 2 emulator",
     "homepage": "https://pcsx2.net/",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.3500/pcsx2-v1.7.3500-windows-64bit-SSE4-wxWidgets.7z",
-            "hash": "93e2aff138f95f9a22d65cac2101b4ee9c1ef07e75b1fa16364d84f6769d5cbb",
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.3501/pcsx2-v1.7.3501-windows-64bit-SSE4-wxWidgets.7z",
+            "hash": "4b5b7fb80a2ab1a94f85ed47e29ad67d76c528b945d6d6071f96580d1b94ccf0",
             "bin": [
                 [
                     "pcsx2x64.exe",
