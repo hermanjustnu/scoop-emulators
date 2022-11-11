@@ -1,18 +1,18 @@
 {
-    "version": "3.7-42603",
+    "version": "3.7-42604",
     "description": "VICE is an emulator collection which emulates the C64, the C64-DTV, the C128, the VIC20, practically all PET models, the PLUS4 and the CBM-II (aka C610)",
     "homepage": "https://vice-emu.sourceforge.io/",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/VICE-Team/svn-mirror/releases/download/r42603/GTK3VICE-3.7-dev-win64-r42603.7z",
-            "hash": "61187354031e4a9c6314d482761823019f42ff907db94789db9ff7a9e7a69d34",
-            "extract_dir": "GTK3VICE-3.7-dev-win64-r42603"
+            "url": "https://github.com/VICE-Team/svn-mirror/releases/download/r42604/GTK3VICE-3.7-dev-win64-r42604.7z",
+            "hash": "5b1da14aac39e01578b30496c36f10473accb49622ec1d9999bb358a805e3046",
+            "extract_dir": "GTK3VICE-3.7-dev-win64-r42604"
         },
         "32bit": {
-            "url": "https://github.com/VICE-Team/svn-mirror/releases/download/r42603/GTK3VICE-3.7-dev-win32-r42603.7z",
-            "hash": "f9e35a535dc25ffaf88f7eb0ea3683fd000bed9ff25695380153401e8be25f22",
-            "extract_dir": "GTK3VICE-3.7-dev-win32-r42603"
+            "url": "https://github.com/VICE-Team/svn-mirror/releases/download/r42604/GTK3VICE-3.7-dev-win32-r42604.7z",
+            "hash": "df68970664f349b654f168dbd25d135b80782503aaf71f95c761bec0088ee9ac",
+            "extract_dir": "GTK3VICE-3.7-dev-win32-r42604"
         }
     },
     "bin": [
