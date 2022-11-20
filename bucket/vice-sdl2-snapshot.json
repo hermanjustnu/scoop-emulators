@@ -1,17 +1,17 @@
 {
-    "version": "3.7-42638",
+    "version": "3.7-42641",
     "description": "VICE is an emulator collection which emulates the C64, the C64-DTV, the C128, the VIC20, practically all PET models, the PLUS4 and the CBM-II (aka C610)",
     "homepage": "https://vice-emu.sourceforge.io/",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/VICE-Team/svn-mirror/releases/download/r42638/SDL2VICE-3.7-dev-win64-r42638.7z",
-            "hash": "aae6d7ac049f20bf1cea28b1f05bdc59e343f06e32f8928ffd4cff6b1d374258",
+            "url": "https://github.com/VICE-Team/svn-mirror/releases/download/r42641/SDL2VICE-3.7-dev-win64-r42641.7z",
+            "hash": "f267a9ab82bb3ab86567a99a212be50e4f5d1f9f10dae3ea0d9e71fd42cecf67",
             "extract_dir": "SDL2VICE-3.7-win64"
         },
         "32bit": {
-            "url": "https://github.com/VICE-Team/svn-mirror/releases/download/r42638/SDL2VICE-3.7-dev-win32-r42638.7z",
-            "hash": "9877e4a32af3edd1cec43520978d170c80720f8355da8a16b6d4321f61d60cc5",
+            "url": "https://github.com/VICE-Team/svn-mirror/releases/download/r42641/SDL2VICE-3.7-dev-win32-r42641.7z",
+            "hash": "07be00c465906f23f9e02faac9f6ff16d567b8030ea8e12239a33dba0ae87d58",
             "extract_dir": "SDL2VICE-3.7-win32"
         }
     },
