@@ -1,5 +1,5 @@
 {
-    "version": "2322",
+    "version": "2323",
     "description": "Nintendo 3DS emulator",
     "homepage": "https://citra-emu.org/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/citra-emu/citra-canary/releases/download/canary-2322/citra-windows-mingw-20221120-536a27a.7z",
-            "hash": "73c3a370cb85f34661a7fda314d2a647c07a0e820dede133566db0798bf8d926"
+            "url": "https://github.com/citra-emu/citra-canary/releases/download/canary-2323/citra-windows-mingw-20221120-31b894c.7z",
+            "hash": "f53f5477f4870b769206aefa582123f575a9d9054f0e11fd0f4ce05a29493d1d"
         }
     },
     "extract_dir": "canary-mingw",
