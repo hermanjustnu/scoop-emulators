@@ -10,13 +10,6 @@
         "64bit": {
             "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip",
             "hash": "91f618e1a65e1dc7d9cd42b12bf70e9b44cddb6cb546283f892dea2245d95270",
-            "bin": [
-                [
-                    "duckstation-nogui-x64-ReleaseLTCG.exe",
-                    "duckstation"
-                ],
-                "duckstation-qt-x64-ReleaseLTCG.exe"
-            ],
             "shortcuts": [
                 [
                     "duckstation-qt-x64-ReleaseLTCG.exe",
@@ -27,13 +20,6 @@
         "arm64": {
             "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-arm64-release.zip",
             "hash": "1132b26b1d9a9bc98e849dfb2d8a4d42f9b1e3e8d17132414aa879f19ea0ab91",
-            "bin": [
-                [
-                    "duckstation-nogui-ARM64-ReleaseLTCG.exe",
-                    "duckstation"
-                ],
-                "duckstation-qt-ARM64-ReleaseLTCG.exe"
-            ],
             "shortcuts": [
                 [
                     "duckstation-qt-ARM64-ReleaseLTCG.exe",
