@@ -1,5 +1,5 @@
 {
-    "version": "20230105215237-5b0fe5a",
+    "version": "20230106083305-40f6b5b",
     "description": "Microsoft Xbox 360 emulator",
     "homepage": "https://xenia.jp",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xenia-canary/xenia-canary/releases/download/5b0fe5a/xenia_canary.zip",
-            "hash": "6b2839f70cf23baf24e96044fcbff2b4c0d223d61fb9e1fe6175e85ad6070bb9"
+            "url": "https://github.com/xenia-canary/xenia-canary/releases/download/40f6b5b/xenia_canary.zip",
+            "hash": "ff947b31f4087bafa24f092b3edbe63bb5828477e8d9b16a3b2afe11f8c5db1b"
         }
     },
     "pre_install": [
