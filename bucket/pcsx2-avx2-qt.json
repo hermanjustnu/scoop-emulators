@@ -1,5 +1,5 @@
 {
-    "version": "1.7.3919",
+    "version": "1.7.3921",
     "description": "Sony PlayStation 2 emulator",
     "homepage": "https://pcsx2.net/",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.3919/pcsx2-v1.7.3919-windows-64bit-AVX2-Qt.7z",
-            "hash": "91c5e87325fb284693108f82391761d51596524ae22e93e862a7f0513576186e",
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.3921/pcsx2-v1.7.3921-windows-64bit-AVX2-Qt.7z",
+            "hash": "c639960e5b12cdedb3ddc5fb84d7ec362262f4f3de1e93b45eabe4e08098b25c",
             "bin": [
                 [
                     "pcsx2-qtx64-avx2.exe",
