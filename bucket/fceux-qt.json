@@ -1,5 +1,5 @@
 {
-    "version": "2.6.4",
+    "version": "2.4.0",
     "description": "Nintendo NES and Famicom emulator",
     "homepage": "http://www.fceux.com",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/2.6.4/qfceux-2.6.4-win64.zip",
-            "hash": "sha1:7a3cf21ccf169c456057cdfd1b0958500cf3cd1a"
+            "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/2.4.0/qfceux-2.4.0-win64.zip",
+            "hash": "sha1:2f1c06f09a08f7a957fd19d45508136edf7cbacb"
         }
     },
     "extract_dir": "bin",
@@ -18,9 +18,7 @@
         "    New-Item \"$dir\\fceux.cfg\" -Type File | Out-Null",
         "}"
     ],
-    "bin": [
-        "qfceux.exe"
-    ],
+    "bin": "qfceux.exe",
     "shortcuts": [
         [
             "qfceux.exe",
