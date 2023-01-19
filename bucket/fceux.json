@@ -1,13 +1,13 @@
 {
-    "version": "2.6.4",
+    "version": "2.4.0",
     "description": "Nintendo NES and Famicom emulator",
     "homepage": "http://www.fceux.com",
     "license": {
         "url": "https://github.com/TASEmulators/fceux/blob/master/COPYING",
         "identifier": "GPL-2.0"
     },
-    "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/2.6.4/fceux-2.6.4-win32.zip",
-    "hash": "sha1:ce4cc39b642ce1209dd27a9d44b4ab86fb863436",
+    "url": "https://downloads.sourceforge.net/project/fceultra/Binaries/2.4.0/fceux-2.4.0-win32.zip",
+    "hash": "sha1:3ac92619873a19a3eb7c396050de71b1fec7cc1e",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\fceux.cfg\")) {",
         "    New-Item \"$dir\\fceux.cfg\" -Type File | Out-Null",
