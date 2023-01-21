@@ -1,5 +1,5 @@
 {
-    "version": "3320",
+    "version": "3321",
     "description": "Nintendo Switch emulator",
     "homepage": "https://github.com/pineappleEA/pineapple-src",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-3320/Windows-Yuzu-EA-3320.zip",
-            "hash": "e7379231c706ec1060d3d90c95c1434b2f85e67e9ca5aafba98d01f19268309d"
+            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-3321/Windows-Yuzu-EA-3321.zip",
+            "hash": "474ac9096697b7b50bf025fa2c17635fa5d1ef61daaa8b96f9f6f75dd9c316dd"
         }
     },
     "extract_dir": "yuzu-windows-msvc-early-access",
