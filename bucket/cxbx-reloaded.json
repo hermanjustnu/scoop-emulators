@@ -1,13 +1,13 @@
 {
-    "version": "20221120123738-0b69563",
+    "version": "20230210175310-111728f",
     "description": "Microsoft Xbox emulator",
     "homepage": "https://cxbx-reloaded.co.uk/",
     "license": {
         "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/blob/master/COPYING",
         "identifier": "GPL-2.0"
     },
-    "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/download/CI-0b69563/CxbxReloaded-Release-VS2022.zip",
-    "hash": "eee0028df987ddca8de69a0bf8e027ca8e192e52cede6c83bdc3d24d649deb9b",
+    "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/download/CI-111728f/CxbxReloaded-Release-VS2022.zip",
+    "hash": "bcd5eb3dfe07db4c4bb50af1ba5f53a55781b5b4146fe90aa78adef7b9b5030d",
     "pre_install": "if (!(Test-Path \"$persist_dir\\settings.ini\")) { $null = New-Item \"$dir\\settings.ini\" }",
     "bin": "cxbx.exe",
     "shortcuts": [
