@@ -9,12 +9,12 @@
     "architecture": {
         "64bit": {
             "url": "https://buildbot.libretro.com/nightly/windows/x86_64/2023-07-10_RetroArch.7z",
-            "hash": "50491a1e803e308cad823371dcaea8f37ae790d71583145550bcc731afa54044",
+            "hash": "4bf1e476ca70cfb36481daf22e13d6bba1b03ce145ed3e7ab2db29eb34824968",
             "extract_dir": "RetroArch-Win64"
         },
         "32bit": {
             "url": "https://buildbot.libretro.com/nightly/windows/x86/2023-07-10_RetroArch.7z",
-            "hash": "fbd4dfee6979d18d913e2bce78d5e00b0be5f7f359e0016436d000da3d9173be",
+            "hash": "9f7dc5399f6623ad6d0dac650ea2b1764895b3730e04906e4b5eb4a8c7a8ef79",
             "extract_dir": "RetroArch-Win32"
         }
     },
