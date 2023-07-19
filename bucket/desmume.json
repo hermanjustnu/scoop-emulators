@@ -1,5 +1,5 @@
 {
-    "version": "1246",
+    "version": "1248",
     "description": "Nintendo DS emulator",
     "homepage": "https://desmume.org",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/TASEmulators/desmume/actions/runs/5591434106/desmume-win-x64.zip",
-            "hash": "bda1060db2c1d10fd4f451eeab1f77e2b096b978dcb54b7dacd28001b51d4df7",
+            "url": "https://nightly.link/TASEmulators/desmume/actions/runs/5593496204/desmume-win-x64.zip",
+            "hash": "c1a0e2875d08303bd69922f1718961d9f96c4b70d366b22ffea24aace8206e8c",
             "bin": [
                 [
                     "DeSmuME-VS2019-x64-Release.exe",
