@@ -1,5 +1,5 @@
 {
-    "version": "0.0.29-15790",
+    "version": "0.0.29-15791",
     "description": "Sony PlayStation 3 emulator",
     "homepage": "https://rpcs3.net/",
     "license": {
@@ -12,8 +12,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-cb4a688e02fb894e0dac3e809eb71a8774172e56/rpcs3-v0.0.29-15790-cb4a688e_win64.7z",
-            "hash": "6f557d639336483a37fb043f7ef5d266384706f7b14591d68fa6325d27a69141"
+            "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-a6839e823e3789b07c03320113b90bb445bb8975/rpcs3-v0.0.29-15791-a6839e82_win64.7z",
+            "hash": "1825562d23050c4e7b108a7915373e833714e8e5d429ca5ea7ebdbd250726af6"
         }
     },
     "installer": {
