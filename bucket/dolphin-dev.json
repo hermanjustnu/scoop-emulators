@@ -1,5 +1,5 @@
 {
-    "version": "2412-82",
+    "version": "2412-85",
     "description": "A Nintendo GameCube and Wii emulator",
     "homepage": "https://dolphin-emu.org/",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.dolphin-emu.org/builds/71/fd/dolphin-master-2412-82-x64.7z",
-            "hash": "ab791deb9627d919abfe97b2420d8ecc653abcbdcf63cc8706858c7165a24d27",
+            "url": "https://dl.dolphin-emu.org/builds/97/4f/dolphin-master-2412-85-x64.7z",
+            "hash": "68299be9275052444abfbdeef8a406b3254f9a108479c3035ccceeb0e6cee16a",
             "extract_dir": "Dolphin-x64"
         }
     },
