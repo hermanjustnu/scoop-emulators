@@ -1,5 +1,5 @@
 {
-    "version": "0.8.16",
+    "version": "0.8.17",
     "description": "Microsoft Xbox emulator",
     "homepage": "https://xemu.app",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mborgerson/xemu/releases/download/v0.8.16/xemu-win-release.zip",
-            "hash": "a0371aeb84e5dc1a830c26991456497e2194ff103a5e4b186125ca26df809bbe"
+            "url": "https://github.com/mborgerson/xemu/releases/download/v0.8.17/xemu-win-release.zip",
+            "hash": "2b9c68376ba09ba2d8967bda23df674dfc70f62f494d299c26c882cae19b4964"
         }
     },
     "pre_install": [
