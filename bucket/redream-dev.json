@@ -1,5 +1,5 @@
 {
-    "version": "1.5.0-1152-gd0e915a",
+    "version": "1.5.0-1152-g4166ec8",
     "description": "Sega Dreamcast emulator",
     "homepage": "https://redream.io",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://redream.io/download/redream.x86_64-windows-v1.5.0-1152-gd0e915a.zip",
-            "hash": "34898136a1323f5d3c587f7c33a8c8ab0646059d546f2ba33571e10a9cdf978a"
+            "url": "https://redream.io/download/redream.x86_64-windows-v1.5.0-1152-g4166ec8.zip",
+            "hash": "894888cc1346f88b49f7e784daa2091f724411665eebb5ca48f49bbe33aeb5fb"
         }
     },
     "pre_install": [
